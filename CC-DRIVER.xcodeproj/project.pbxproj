@@ -1,0 +1,1293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A012A94219A502F00CE5F8A /* TipBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A012A93219A502F00CE5F8A /* TipBtn.swift */; };
+		6A098A3B206C9ACF009EFBE3 /* becomeADriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A098A3A206C9ACF009EFBE3 /* becomeADriverVC.swift */; };
+		6A181D7320720A84005DCAC7 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A181D7220720A84005DCAC7 /* UpdateService.swift */; };
+		6A181D7620721157005DCAC7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A181D7520721157005DCAC7 /* ProfileVC.swift */; };
+		6A181D7820721E76005DCAC7 /* modTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A181D7720721E76005DCAC7 /* modTxtField.swift */; };
+		6A1BB9C520814DCC00F00C73 /* changePhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB9C420814DCC00F00C73 /* changePhoneVC.swift */; };
+		6A1BB9C720814DE400F00C73 /* changeEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB9C620814DE400F00C73 /* changeEmailVC.swift */; };
+		6A1BB9C920814DF100F00C73 /* changeSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB9C820814DF100F00C73 /* changeSchoolVC.swift */; };
+		6A1BB9CB208153C200F00C73 /* verifyChangePhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB9CA208153C200F00C73 /* verifyChangePhoneVC.swift */; };
+		6A1BB9CD20815C3C00F00C73 /* verifyChangeEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB9CC20815C3C00F00C73 /* verifyChangeEmailVC.swift */; };
+		6A1C9A252082DD86005D73AD /* avatarImgRendered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C9A242082DD86005D73AD /* avatarImgRendered.swift */; };
+		6A1EF42720749163004EA053 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EF42620749163004EA053 /* RatingVC.swift */; };
+		6A1EF42B2074A49F004EA053 /* CommentTxtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EF42A2074A49F004EA053 /* CommentTxtView.swift */; };
+		6A1EF42E2074A8A1004EA053 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EF42D2074A8A1004EA053 /* HistoryVC.swift */; };
+		6A246480207A78DF004F914E /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24647F207A78DF004F914E /* HistoryModel.swift */; };
+		6A246483207A84B9004F914E /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A246482207A84B9004F914E /* HistoryCell.swift */; };
+		6A24648A207AB124004F914E /* ratingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A246489207AB124004F914E /* ratingCell.swift */; };
+		6A24648E207AB14A004F914E /* ratingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24648D207AB14A004F914E /* ratingModel.swift */; };
+		6A246490207B0518004F914E /* carPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24648F207B0518004F914E /* carPlate.swift */; };
+		6A246494207B13EB004F914E /* reportAnotherIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A246493207B13EB004F914E /* reportAnotherIssue.swift */; };
+		6A246496207B13FD004F914E /* reportLostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A246495207B13FD004F914E /* reportLostItem.swift */; };
+		6A246499207B1D98004F914E /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A246498207B1D98004F914E /* LocalNotification.swift */; };
+		6A24649B207BCBFB004F914E /* driverTripDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24649A207BCBFA004F914E /* driverTripDetailVC.swift */; };
+		6A2778BA21034E170049B6FB /* customizedMap.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A2778B921034E170049B6FB /* customizedMap.json */; };
+		6A2778BE21118F490049B6FB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2778BD21118F490049B6FB /* MapView.swift */; };
+		6A2ABB862115C895003001FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A2ABB852115C895003001FE /* GoogleService-Info.plist */; };
+		6A37A77320752D5500888152 /* shippingAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77220752D5500888152 /* shippingAddVC.swift */; };
+		6A37A77520752D6800888152 /* carRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77420752D6800888152 /* carRegistrationVC.swift */; };
+		6A37A77720752D7700888152 /* DriverLicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77620752D7700888152 /* DriverLicsVC.swift */; };
+		6A37A77920752D8700888152 /* LicensePlateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77820752D8700888152 /* LicensePlateVC.swift */; };
+		6A37A77B20752D9400888152 /* photoOfCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77A20752D9400888152 /* photoOfCarVC.swift */; };
+		6A37A77D20752DAE00888152 /* socialSecurityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A77C20752DAE00888152 /* socialSecurityVC.swift */; };
+		6A37A7812075C56400888152 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A7802075C56400888152 /* SwiftLoader.swift */; };
+		6A37A7852076B40800888152 /* Rider_trip_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A7842076B40800888152 /* Rider_trip_model.swift */; };
+		6A37A7872076B41500888152 /* Driver_trip_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A7862076B41500888152 /* Driver_trip_model.swift */; };
+		6A457FEC20695D280001C08A /* bookCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A457FEB20695D280001C08A /* bookCarView.swift */; };
+		6A457FEE206963FA0001C08A /* defaultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A457FED206963FA0001C08A /* defaultCardView.swift */; };
+		6A457FF0206967EB0001C08A /* circleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A457FEF206967EB0001C08A /* circleView.swift */; };
+		6A4D3AE920619FC9007CE14C /* MainApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D3AE820619FC9007CE14C /* MainApiClient.swift */; };
+		6A549706205F6ED3006346D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A549705205F6ED3006346D7 /* AppDelegate.swift */; };
+		6A54970B205F6ED3006346D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A549709205F6ED3006346D7 /* Main.storyboard */; };
+		6A54970D205F6ED4006346D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A54970C205F6ED4006346D7 /* Assets.xcassets */; };
+		6A549710205F6ED4006346D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A54970E205F6ED4006346D7 /* LaunchScreen.storyboard */; };
+		6A54971B205F6ED4006346D7 /* Campus_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54971A205F6ED4006346D7 /* Campus_ConnectTests.swift */; };
+		6A549726205F6ED4006346D7 /* Campus_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A549725205F6ED4006346D7 /* Campus_ConnectUITests.swift */; };
+		6A5EB691206A0C150060CD29 /* modifiedChooseCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EB690206A0C150060CD29 /* modifiedChooseCarView.swift */; };
+		6A5EB695206A17F00060CD29 /* borderAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EB694206A17F00060CD29 /* borderAvatarView.swift */; };
+		6A5EB69B206AA8310060CD29 /* TripHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EB69A206AA8310060CD29 /* TripHistoryVC.swift */; };
+		6A643B6F21235CAA005A84C7 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A643B6E21235CAA005A84C7 /* BalloonMarker.swift */; };
+		6A6B50B52060155B004494F9 /* phoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B50B42060155B004494F9 /* phoneVC.swift */; };
+		6A6B50B720601DD9004494F9 /* VerifiedPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B50B620601DD9004494F9 /* VerifiedPhoneVC.swift */; };
+		6A80F5BC2068555A007044D7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80F5BB2068555A007044D7 /* DataService.swift */; };
+		6A8C2FE92062375600218897 /* fancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C2FE82062375600218897 /* fancyBtn.swift */; };
+		6A8C2FED206264CB00218897 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C2FEC206264CB00218897 /* ProfileView.swift */; };
+		6A97CA042065A33D00DE74A4 /* searchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97CA032065A33D00DE74A4 /* searchModel.swift */; };
+		6A97CA082065A8CD00DE74A4 /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97CA072065A8CD00DE74A4 /* searchCell.swift */; };
+		6AAE2C35205F8015001DEF07 /* FirstLookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE2C34205F8015001DEF07 /* FirstLookVC.swift */; };
+		6AAE2C39205F81AA001DEF07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE2C38205F81AA001DEF07 /* Constant.swift */; };
+		6AAEF921207FEDA300DD5FFA /* cloudapi in Resources */ = {isa = PBXBuildFile; fileRef = 6AAEF920207FEDA300DD5FFA /* cloudapi */; };
+		6ACFA2CA213C6B610084D592 /* codeIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFA2C9213C6B610084D592 /* codeIDVC.swift */; };
+		6AE7E893206DD50500F5AB38 /* windowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7E892206DD50500F5AB38 /* windowInfo.swift */; };
+		6AEBDC87206556DD008937E5 /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEBDC86206556DD008937E5 /* searchController.swift */; };
+		6AEBDC892065605C008937E5 /* ModifiedSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEBDC882065605C008937E5 /* ModifiedSearchBar.swift */; };
+		6AFFF8BB20849FF5004B2B9B /* reportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFF8BA20849FF5004B2B9B /* reportVC.swift */; };
+		E9E19323C2758D06103836CA /* Pods_CC_DRIVER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB7DB2810F92D4CF031F999 /* Pods_CC_DRIVER.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A549717205F6ED4006346D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5496FA205F6ED3006346D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A549701205F6ED3006346D7;
+			remoteInfo = "Campus Connect";
+		};
+		6A549722205F6ED4006346D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5496FA205F6ED3006346D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A549701205F6ED3006346D7;
+			remoteInfo = "Campus Connect";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		223893B747CAB4398E8FF684 /* Pods-Campus Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Connect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Campus Connect/Pods-Campus Connect.debug.xcconfig"; sourceTree = "<group>"; };
+		356ED6F978305EB7DEBB7562 /* Pods_Campus_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campus_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB7DB2810F92D4CF031F999 /* Pods_CC_DRIVER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CC_DRIVER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C7EC580DA64BA3C955303E4 /* Pods-CC-DRIVER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-DRIVER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER.debug.xcconfig"; sourceTree = "<group>"; };
+		6A012A93219A502F00CE5F8A /* TipBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBtn.swift; sourceTree = "<group>"; };
+		6A012A95219B286200CE5F8A /* CC-DRIVER.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CC-DRIVER.entitlements"; sourceTree = "<group>"; };
+		6A098A3A206C9ACF009EFBE3 /* becomeADriverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = becomeADriverVC.swift; sourceTree = "<group>"; };
+		6A181D7220720A84005DCAC7 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		6A181D7520721157005DCAC7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		6A181D7720721E76005DCAC7 /* modTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modTxtField.swift; sourceTree = "<group>"; };
+		6A1BB9C420814DCC00F00C73 /* changePhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePhoneVC.swift; sourceTree = "<group>"; };
+		6A1BB9C620814DE400F00C73 /* changeEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeEmailVC.swift; sourceTree = "<group>"; };
+		6A1BB9C820814DF100F00C73 /* changeSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeSchoolVC.swift; sourceTree = "<group>"; };
+		6A1BB9CA208153C200F00C73 /* verifyChangePhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyChangePhoneVC.swift; sourceTree = "<group>"; };
+		6A1BB9CC20815C3C00F00C73 /* verifyChangeEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyChangeEmailVC.swift; sourceTree = "<group>"; };
+		6A1C9A242082DD86005D73AD /* avatarImgRendered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarImgRendered.swift; sourceTree = "<group>"; };
+		6A1EF42620749163004EA053 /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
+		6A1EF42A2074A49F004EA053 /* CommentTxtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTxtView.swift; sourceTree = "<group>"; };
+		6A1EF42D2074A8A1004EA053 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		6A24647F207A78DF004F914E /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		6A246482207A84B9004F914E /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		6A246489207AB124004F914E /* ratingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratingCell.swift; sourceTree = "<group>"; };
+		6A24648D207AB14A004F914E /* ratingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratingModel.swift; sourceTree = "<group>"; };
+		6A24648F207B0518004F914E /* carPlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carPlate.swift; sourceTree = "<group>"; };
+		6A246493207B13EB004F914E /* reportAnotherIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportAnotherIssue.swift; sourceTree = "<group>"; };
+		6A246495207B13FD004F914E /* reportLostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportLostItem.swift; sourceTree = "<group>"; };
+		6A246498207B1D98004F914E /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		6A24649A207BCBFA004F914E /* driverTripDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverTripDetailVC.swift; sourceTree = "<group>"; };
+		6A2778B921034E170049B6FB /* customizedMap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customizedMap.json; sourceTree = "<group>"; };
+		6A2778BD21118F490049B6FB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6A2ABB852115C895003001FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A37A77220752D5500888152 /* shippingAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shippingAddVC.swift; sourceTree = "<group>"; };
+		6A37A77420752D6800888152 /* carRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carRegistrationVC.swift; sourceTree = "<group>"; };
+		6A37A77620752D7700888152 /* DriverLicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLicsVC.swift; sourceTree = "<group>"; };
+		6A37A77820752D8700888152 /* LicensePlateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlateVC.swift; sourceTree = "<group>"; };
+		6A37A77A20752D9400888152 /* photoOfCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoOfCarVC.swift; sourceTree = "<group>"; };
+		6A37A77C20752DAE00888152 /* socialSecurityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialSecurityVC.swift; sourceTree = "<group>"; };
+		6A37A7802075C56400888152 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
+		6A37A7842076B40800888152 /* Rider_trip_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rider_trip_model.swift; sourceTree = "<group>"; };
+		6A37A7862076B41500888152 /* Driver_trip_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_trip_model.swift; sourceTree = "<group>"; };
+		6A457FEB20695D280001C08A /* bookCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookCarView.swift; sourceTree = "<group>"; };
+		6A457FED206963FA0001C08A /* defaultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultCardView.swift; sourceTree = "<group>"; };
+		6A457FEF206967EB0001C08A /* circleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleView.swift; sourceTree = "<group>"; };
+		6A4D3AE820619FC9007CE14C /* MainApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApiClient.swift; sourceTree = "<group>"; };
+		6A549702205F6ED3006346D7 /* CC-DRIVER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-DRIVER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A549705205F6ED3006346D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A54970A205F6ED3006346D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A54970C205F6ED4006346D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A54970F205F6ED4006346D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A549711205F6ED4006346D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A549716205F6ED4006346D7 /* CC-DRIVERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC-DRIVERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A54971A205F6ED4006346D7 /* Campus_ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus_ConnectTests.swift; sourceTree = "<group>"; };
+		6A54971C205F6ED4006346D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A549721205F6ED4006346D7 /* CC-DRIVERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC-DRIVERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A549725205F6ED4006346D7 /* Campus_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus_ConnectUITests.swift; sourceTree = "<group>"; };
+		6A549727205F6ED4006346D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5EB690206A0C150060CD29 /* modifiedChooseCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modifiedChooseCarView.swift; sourceTree = "<group>"; };
+		6A5EB694206A17F00060CD29 /* borderAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = borderAvatarView.swift; sourceTree = "<group>"; };
+		6A5EB69A206AA8310060CD29 /* TripHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryVC.swift; sourceTree = "<group>"; };
+		6A643B6E21235CAA005A84C7 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		6A6B50B42060155B004494F9 /* phoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneVC.swift; sourceTree = "<group>"; };
+		6A6B50B620601DD9004494F9 /* VerifiedPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedPhoneVC.swift; sourceTree = "<group>"; };
+		6A80F5BB2068555A007044D7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6A8C2FE82062375600218897 /* fancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fancyBtn.swift; sourceTree = "<group>"; };
+		6A8C2FEC206264CB00218897 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6A97CA032065A33D00DE74A4 /* searchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchModel.swift; sourceTree = "<group>"; };
+		6A97CA072065A8CD00DE74A4 /* searchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
+		6AAE2C34205F8015001DEF07 /* FirstLookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLookVC.swift; sourceTree = "<group>"; };
+		6AAE2C38205F81AA001DEF07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6AAEF920207FEDA300DD5FFA /* cloudapi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cloudapi; sourceTree = "<group>"; };
+		6ACFA2C9213C6B610084D592 /* codeIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeIDVC.swift; sourceTree = "<group>"; };
+		6AE7E892206DD50500F5AB38 /* windowInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windowInfo.swift; sourceTree = "<group>"; };
+		6AEBDC86206556DD008937E5 /* searchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
+		6AEBDC882065605C008937E5 /* ModifiedSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedSearchBar.swift; sourceTree = "<group>"; };
+		6AFFF8BA20849FF5004B2B9B /* reportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportVC.swift; sourceTree = "<group>"; };
+		9AA495EAC4ABA7FCEF9DF613 /* Pods-CC-DRIVER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-DRIVER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER.release.xcconfig"; sourceTree = "<group>"; };
+		CC390DCDF447F99595CBC1F4 /* Pods-Campus Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Connect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Campus Connect/Pods-Campus Connect.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A5496FF205F6ED3006346D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E19323C2758D06103836CA /* Pods_CC_DRIVER.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A549713205F6ED4006346D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A54971E205F6ED4006346D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A098A39206C9AB7009EFBE3 /* Become a driver  */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77120752D2F00888152 /* Shipping address */,
+				6A37A77020752CFA00888152 /* Car registration */,
+				6A37A76F20752CF700888152 /* Driver lics */,
+				6A37A76E20752CF400888152 /* License plate */,
+				6A37A76D20752CF100888152 /* Photo of car */,
+				6A37A76C20752CEE00888152 /* Social security */,
+				6A098A3A206C9ACF009EFBE3 /* becomeADriverVC.swift */,
+			);
+			path = "Become a driver ";
+			sourceTree = "<group>";
+		};
+		6A0CC14C2060402900AE5414 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A7832076B3C300888152 /* RIder_trip_model */,
+				6A37A7822076B3B300888152 /* Driver_trip_model */,
+				6A2778BD21118F490049B6FB /* MapView.swift */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		6A0CC14F206040EE00AE5414 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6A2778B921034E170049B6FB /* customizedMap.json */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6A181D7420721144005DCAC7 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A181D7520721157005DCAC7 /* ProfileVC.swift */,
+				6A1BB9BE20814D7000F00C73 /* Support change Profile vc */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		6A1BB9BE20814D7000F00C73 /* Support change Profile vc */ = {
+			isa = PBXGroup;
+			children = (
+				6A1BB9C120814D9200F00C73 /* changeSchoolVC */,
+				6A1BB9C020814D8F00F00C73 /* changeEmailVC */,
+				6A1BB9BF20814D8700F00C73 /* changePhoneVC */,
+			);
+			path = "Support change Profile vc";
+			sourceTree = "<group>";
+		};
+		6A1BB9BF20814D8700F00C73 /* changePhoneVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A1BB9C420814DCC00F00C73 /* changePhoneVC.swift */,
+				6A1BB9CA208153C200F00C73 /* verifyChangePhoneVC.swift */,
+			);
+			name = changePhoneVC;
+			path = "../New Group/changePhoneVC";
+			sourceTree = "<group>";
+		};
+		6A1BB9C020814D8F00F00C73 /* changeEmailVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A1BB9C620814DE400F00C73 /* changeEmailVC.swift */,
+				6A1BB9CC20815C3C00F00C73 /* verifyChangeEmailVC.swift */,
+			);
+			path = changeEmailVC;
+			sourceTree = "<group>";
+		};
+		6A1BB9C120814D9200F00C73 /* changeSchoolVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A1BB9C820814DF100F00C73 /* changeSchoolVC.swift */,
+			);
+			path = changeSchoolVC;
+			sourceTree = "<group>";
+		};
+		6A1EF4252074914C004EA053 /* RatingVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A246488207AB10F004F914E /* RatingCell */,
+				6A246487207AB107004F914E /* RatingModel */,
+				6A1EF42620749163004EA053 /* RatingVC.swift */,
+			);
+			path = RatingVC;
+			sourceTree = "<group>";
+		};
+		6A1EF42C2074A884004EA053 /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A246481207A849B004F914E /* HistoryCell */,
+				6A24647E207A78CC004F914E /* HistoryModel */,
+				6A1EF42D2074A8A1004EA053 /* HistoryVC.swift */,
+			);
+			path = HistoryVC;
+			sourceTree = "<group>";
+		};
+		6A24647E207A78CC004F914E /* HistoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A24647F207A78DF004F914E /* HistoryModel.swift */,
+			);
+			path = HistoryModel;
+			sourceTree = "<group>";
+		};
+		6A246481207A849B004F914E /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A246482207A84B9004F914E /* HistoryCell.swift */,
+			);
+			path = HistoryCell;
+			sourceTree = "<group>";
+		};
+		6A246484207A8FF2004F914E /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6A24649A207BCBFA004F914E /* driverTripDetailVC.swift */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		6A246487207AB107004F914E /* RatingModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A24648D207AB14A004F914E /* ratingModel.swift */,
+			);
+			path = RatingModel;
+			sourceTree = "<group>";
+		};
+		6A246488207AB10F004F914E /* RatingCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A246489207AB124004F914E /* ratingCell.swift */,
+			);
+			path = RatingCell;
+			sourceTree = "<group>";
+		};
+		6A246491207B13C2004F914E /* reportLostItem */ = {
+			isa = PBXGroup;
+			children = (
+				6A246495207B13FD004F914E /* reportLostItem.swift */,
+			);
+			path = reportLostItem;
+			sourceTree = "<group>";
+		};
+		6A246492207B13CE004F914E /* reportAnotherIssue */ = {
+			isa = PBXGroup;
+			children = (
+				6A246493207B13EB004F914E /* reportAnotherIssue.swift */,
+			);
+			path = reportAnotherIssue;
+			sourceTree = "<group>";
+		};
+		6A246497207B1D84004F914E /* LocalNotif */ = {
+			isa = PBXGroup;
+			children = (
+				6A246498207B1D98004F914E /* LocalNotification.swift */,
+			);
+			path = LocalNotif;
+			sourceTree = "<group>";
+		};
+		6A37A76C20752CEE00888152 /* Social security */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77C20752DAE00888152 /* socialSecurityVC.swift */,
+			);
+			path = "Social security";
+			sourceTree = "<group>";
+		};
+		6A37A76D20752CF100888152 /* Photo of car */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77A20752D9400888152 /* photoOfCarVC.swift */,
+			);
+			path = "Photo of car";
+			sourceTree = "<group>";
+		};
+		6A37A76E20752CF400888152 /* License plate */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77820752D8700888152 /* LicensePlateVC.swift */,
+			);
+			path = "License plate";
+			sourceTree = "<group>";
+		};
+		6A37A76F20752CF700888152 /* Driver lics */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77620752D7700888152 /* DriverLicsVC.swift */,
+			);
+			path = "Driver lics";
+			sourceTree = "<group>";
+		};
+		6A37A77020752CFA00888152 /* Car registration */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77420752D6800888152 /* carRegistrationVC.swift */,
+			);
+			path = "Car registration";
+			sourceTree = "<group>";
+		};
+		6A37A77120752D2F00888152 /* Shipping address */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A77220752D5500888152 /* shippingAddVC.swift */,
+			);
+			path = "Shipping address";
+			sourceTree = "<group>";
+		};
+		6A37A77F2075C44000888152 /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A7802075C56400888152 /* SwiftLoader.swift */,
+			);
+			path = SwiftLoader;
+			sourceTree = "<group>";
+		};
+		6A37A7822076B3B300888152 /* Driver_trip_model */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A7862076B41500888152 /* Driver_trip_model.swift */,
+			);
+			path = Driver_trip_model;
+			sourceTree = "<group>";
+		};
+		6A37A7832076B3C300888152 /* RIder_trip_model */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A7842076B40800888152 /* Rider_trip_model.swift */,
+			);
+			path = RIder_trip_model;
+			sourceTree = "<group>";
+		};
+		6A4D3AE720619FB0007CE14C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6A4D3AE820619FC9007CE14C /* MainApiClient.swift */,
+				6A643B6E21235CAA005A84C7 /* BalloonMarker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6A5496F9205F6ED3006346D7 = {
+			isa = PBXGroup;
+			children = (
+				6A549704205F6ED3006346D7 /* CC-DRIVER */,
+				6A549719205F6ED4006346D7 /* CC-DRIVERTests */,
+				6A549724205F6ED4006346D7 /* CC-DRIVERUITests */,
+				6A549703205F6ED3006346D7 /* Products */,
+				8DBEBF9C9311FF6A9DDF0DB2 /* Pods */,
+				6E7C93534AAAF0AEAF9F9F23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A549703205F6ED3006346D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A549702205F6ED3006346D7 /* CC-DRIVER.app */,
+				6A549716205F6ED4006346D7 /* CC-DRIVERTests.xctest */,
+				6A549721205F6ED4006346D7 /* CC-DRIVERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A549704205F6ED3006346D7 /* CC-DRIVER */ = {
+			isa = PBXGroup;
+			children = (
+				6A012A95219B286200CE5F8A /* CC-DRIVER.entitlements */,
+				6AAEF920207FEDA300DD5FFA /* cloudapi */,
+				6A37A77F2075C44000888152 /* SwiftLoader */,
+				6AE7E891206DD4A000F5AB38 /* xib */,
+				6A4D3AE720619FB0007CE14C /* Utils */,
+				6A0CC14F206040EE00AE5414 /* Map */,
+				6AAE2C2E205F751E001DEF07 /* Delegate */,
+				6AAE2C31205F752A001DEF07 /* DataService */,
+				6A97CA012065742F00DE74A4 /* Constant */,
+				6AAE2C30205F7527001DEF07 /* View Controller */,
+				6AAE2C2F205F7523001DEF07 /* Mod view */,
+				6A549709205F6ED3006346D7 /* Main.storyboard */,
+				6A54970C205F6ED4006346D7 /* Assets.xcassets */,
+				6A54970E205F6ED4006346D7 /* LaunchScreen.storyboard */,
+				6A2ABB852115C895003001FE /* GoogleService-Info.plist */,
+				6A549711205F6ED4006346D7 /* Info.plist */,
+			);
+			path = "CC-DRIVER";
+			sourceTree = "<group>";
+		};
+		6A549719205F6ED4006346D7 /* CC-DRIVERTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A54971A205F6ED4006346D7 /* Campus_ConnectTests.swift */,
+				6A54971C205F6ED4006346D7 /* Info.plist */,
+			);
+			path = "CC-DRIVERTests";
+			sourceTree = "<group>";
+		};
+		6A549724205F6ED4006346D7 /* CC-DRIVERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A549725205F6ED4006346D7 /* Campus_ConnectUITests.swift */,
+				6A549727205F6ED4006346D7 /* Info.plist */,
+			);
+			path = "CC-DRIVERUITests";
+			sourceTree = "<group>";
+		};
+		6A5EB699206AA81B0060CD29 /* Trip History */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EB69A206AA8310060CD29 /* TripHistoryVC.swift */,
+			);
+			path = "Trip History";
+			sourceTree = "<group>";
+		};
+		6A97CA012065742F00DE74A4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE2C38205F81AA001DEF07 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		6A97CA022065A25500DE74A4 /* SearchModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A97CA032065A33D00DE74A4 /* searchModel.swift */,
+			);
+			path = SearchModel;
+			sourceTree = "<group>";
+		};
+		6A97CA052065A83400DE74A4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6A97CA062065A84300DE74A4 /* SearchCell */,
+				6AEBDC86206556DD008937E5 /* searchController.swift */,
+				6A97CA022065A25500DE74A4 /* SearchModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6A97CA062065A84300DE74A4 /* SearchCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A97CA072065A8CD00DE74A4 /* searchCell.swift */,
+			);
+			path = SearchCell;
+			sourceTree = "<group>";
+		};
+		6AAE2C2E205F751E001DEF07 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6A549705205F6ED3006346D7 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6AAE2C2F205F7523001DEF07 /* Mod view */ = {
+			isa = PBXGroup;
+			children = (
+				6A8C2FE82062375600218897 /* fancyBtn.swift */,
+				6A8C2FEC206264CB00218897 /* ProfileView.swift */,
+				6AEBDC882065605C008937E5 /* ModifiedSearchBar.swift */,
+				6A457FEB20695D280001C08A /* bookCarView.swift */,
+				6A457FED206963FA0001C08A /* defaultCardView.swift */,
+				6A457FEF206967EB0001C08A /* circleView.swift */,
+				6A5EB690206A0C150060CD29 /* modifiedChooseCarView.swift */,
+				6A5EB694206A17F00060CD29 /* borderAvatarView.swift */,
+				6AE7E892206DD50500F5AB38 /* windowInfo.swift */,
+				6A181D7720721E76005DCAC7 /* modTxtField.swift */,
+				6A1EF42A2074A49F004EA053 /* CommentTxtView.swift */,
+				6A24648F207B0518004F914E /* carPlate.swift */,
+				6A1C9A242082DD86005D73AD /* avatarImgRendered.swift */,
+				6A012A93219A502F00CE5F8A /* TipBtn.swift */,
+			);
+			path = "Mod view";
+			sourceTree = "<group>";
+		};
+		6AAE2C30205F7527001DEF07 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFF8BC20849FFA004B2B9B /* ReportVC */,
+				6A246497207B1D84004F914E /* LocalNotif */,
+				6A246492207B13CE004F914E /* reportAnotherIssue */,
+				6A246491207B13C2004F914E /* reportLostItem */,
+				6A246484207A8FF2004F914E /* TripDetail */,
+				6A1EF42C2074A884004EA053 /* HistoryVC */,
+				6A1EF4252074914C004EA053 /* RatingVC */,
+				6A181D7420721144005DCAC7 /* ProfileVC */,
+				6A098A39206C9AB7009EFBE3 /* Become a driver  */,
+				6A5EB699206AA81B0060CD29 /* Trip History */,
+				6A97CA052065A83400DE74A4 /* Search */,
+				6A0CC14C2060402900AE5414 /* Map View */,
+				6AAE2C33205F7FFD001DEF07 /* Register */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		6AAE2C31205F752A001DEF07 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				6A80F5BB2068555A007044D7 /* DataService.swift */,
+				6A181D7220720A84005DCAC7 /* UpdateService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		6AAE2C32205F7FEC001DEF07 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A6B50B42060155B004494F9 /* phoneVC.swift */,
+				6A6B50B620601DD9004494F9 /* VerifiedPhoneVC.swift */,
+				6ACFA2C9213C6B610084D592 /* codeIDVC.swift */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		6AAE2C33205F7FFD001DEF07 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE2C34205F8015001DEF07 /* FirstLookVC.swift */,
+				6AAE2C32205F7FEC001DEF07 /* SignUpVC */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		6AE7E891206DD4A000F5AB38 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		6AFFF8BC20849FFA004B2B9B /* ReportVC */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFF8BA20849FF5004B2B9B /* reportVC.swift */,
+			);
+			path = ReportVC;
+			sourceTree = "<group>";
+		};
+		6E7C93534AAAF0AEAF9F9F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				356ED6F978305EB7DEBB7562 /* Pods_Campus_Connect.framework */,
+				3AB7DB2810F92D4CF031F999 /* Pods_CC_DRIVER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DBEBF9C9311FF6A9DDF0DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				223893B747CAB4398E8FF684 /* Pods-Campus Connect.debug.xcconfig */,
+				CC390DCDF447F99595CBC1F4 /* Pods-Campus Connect.release.xcconfig */,
+				5C7EC580DA64BA3C955303E4 /* Pods-CC-DRIVER.debug.xcconfig */,
+				9AA495EAC4ABA7FCEF9DF613 /* Pods-CC-DRIVER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A549701205F6ED3006346D7 /* CC-DRIVER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A54972A205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVER" */;
+			buildPhases = (
+				1E46E47EEEB7DC75740662A5 /* [CP] Check Pods Manifest.lock */,
+				6A5496FE205F6ED3006346D7 /* Sources */,
+				6A5496FF205F6ED3006346D7 /* Frameworks */,
+				6A549700205F6ED3006346D7 /* Resources */,
+				F6152FEFBB7377EC440E7B4A /* [CP] Embed Pods Frameworks */,
+				A60BD591DCE68887320AA9E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CC-DRIVER";
+			productName = "Campus Connect";
+			productReference = 6A549702205F6ED3006346D7 /* CC-DRIVER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A549715205F6ED4006346D7 /* CC-DRIVERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A54972D205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVERTests" */;
+			buildPhases = (
+				6A549712205F6ED4006346D7 /* Sources */,
+				6A549713205F6ED4006346D7 /* Frameworks */,
+				6A549714205F6ED4006346D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A549718205F6ED4006346D7 /* PBXTargetDependency */,
+			);
+			name = "CC-DRIVERTests";
+			productName = "Campus ConnectTests";
+			productReference = 6A549716205F6ED4006346D7 /* CC-DRIVERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A549720205F6ED4006346D7 /* CC-DRIVERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A549730205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVERUITests" */;
+			buildPhases = (
+				6A54971D205F6ED4006346D7 /* Sources */,
+				6A54971E205F6ED4006346D7 /* Frameworks */,
+				6A54971F205F6ED4006346D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A549723205F6ED4006346D7 /* PBXTargetDependency */,
+			);
+			name = "CC-DRIVERUITests";
+			productName = "Campus ConnectUITests";
+			productReference = 6A549721205F6ED4006346D7 /* CC-DRIVERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A5496FA205F6ED3006346D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Campus Connect LLC";
+				TargetAttributes = {
+					6A549701205F6ED3006346D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+						};
+					};
+					6A549715205F6ED4006346D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A549701205F6ED3006346D7;
+					};
+					6A549720205F6ED4006346D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A549701205F6ED3006346D7;
+					};
+				};
+			};
+			buildConfigurationList = 6A5496FD205F6ED3006346D7 /* Build configuration list for PBXProject "CC-DRIVER" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A5496F9205F6ED3006346D7;
+			productRefGroup = 6A549703205F6ED3006346D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A549701205F6ED3006346D7 /* CC-DRIVER */,
+				6A549715205F6ED4006346D7 /* CC-DRIVERTests */,
+				6A549720205F6ED4006346D7 /* CC-DRIVERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A549700205F6ED3006346D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A549710205F6ED4006346D7 /* LaunchScreen.storyboard in Resources */,
+				6A54970D205F6ED4006346D7 /* Assets.xcassets in Resources */,
+				6A54970B205F6ED3006346D7 /* Main.storyboard in Resources */,
+				6A2ABB862115C895003001FE /* GoogleService-Info.plist in Resources */,
+				6AAEF921207FEDA300DD5FFA /* cloudapi in Resources */,
+				6A2778BA21034E170049B6FB /* customizedMap.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A549714205F6ED4006346D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A54971F205F6ED4006346D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E46E47EEEB7DC75740662A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CC-DRIVER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A60BD591DCE68887320AA9E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6152FEFBB7377EC440E7B4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IGRPhotoTweaks/IGRPhotoTweaks.framework",
+				"${BUILT_PRODUCTS_DIR}/JDropDownAlert/JDropDownAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/KDCircularProgress/KDCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulsator/Pulsator.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SidebarOverlay/SidebarOverlay.framework",
+				"${BUILT_PRODUCTS_DIR}/SinchVerification-Swift/SinchVerification.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOCR/SwiftOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGRPhotoTweaks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDropDownAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulsator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SidebarOverlay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SinchVerification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-DRIVER/Pods-CC-DRIVER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A5496FE205F6ED3006346D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A457FF0206967EB0001C08A /* circleView.swift in Sources */,
+				6A246494207B13EB004F914E /* reportAnotherIssue.swift in Sources */,
+				6A1C9A252082DD86005D73AD /* avatarImgRendered.swift in Sources */,
+				6A457FEC20695D280001C08A /* bookCarView.swift in Sources */,
+				6A8C2FE92062375600218897 /* fancyBtn.swift in Sources */,
+				6A1EF42720749163004EA053 /* RatingVC.swift in Sources */,
+				6A97CA042065A33D00DE74A4 /* searchModel.swift in Sources */,
+				6A098A3B206C9ACF009EFBE3 /* becomeADriverVC.swift in Sources */,
+				6ACFA2CA213C6B610084D592 /* codeIDVC.swift in Sources */,
+				6A246483207A84B9004F914E /* HistoryCell.swift in Sources */,
+				6A457FEE206963FA0001C08A /* defaultCardView.swift in Sources */,
+				6AAE2C35205F8015001DEF07 /* FirstLookVC.swift in Sources */,
+				6A1BB9C920814DF100F00C73 /* changeSchoolVC.swift in Sources */,
+				6A1BB9CB208153C200F00C73 /* verifyChangePhoneVC.swift in Sources */,
+				6A24648A207AB124004F914E /* ratingCell.swift in Sources */,
+				6A97CA082065A8CD00DE74A4 /* searchCell.swift in Sources */,
+				6A012A94219A502F00CE5F8A /* TipBtn.swift in Sources */,
+				6A246490207B0518004F914E /* carPlate.swift in Sources */,
+				6A1BB9CD20815C3C00F00C73 /* verifyChangeEmailVC.swift in Sources */,
+				6A24648E207AB14A004F914E /* ratingModel.swift in Sources */,
+				6A37A77320752D5500888152 /* shippingAddVC.swift in Sources */,
+				6A6B50B720601DD9004494F9 /* VerifiedPhoneVC.swift in Sources */,
+				6A37A77B20752D9400888152 /* photoOfCarVC.swift in Sources */,
+				6A37A7872076B41500888152 /* Driver_trip_model.swift in Sources */,
+				6A246480207A78DF004F914E /* HistoryModel.swift in Sources */,
+				6A181D7620721157005DCAC7 /* ProfileVC.swift in Sources */,
+				6A5EB695206A17F00060CD29 /* borderAvatarView.swift in Sources */,
+				6A6B50B52060155B004494F9 /* phoneVC.swift in Sources */,
+				6AE7E893206DD50500F5AB38 /* windowInfo.swift in Sources */,
+				6A246499207B1D98004F914E /* LocalNotification.swift in Sources */,
+				6A181D7820721E76005DCAC7 /* modTxtField.swift in Sources */,
+				6A37A77520752D6800888152 /* carRegistrationVC.swift in Sources */,
+				6A1BB9C520814DCC00F00C73 /* changePhoneVC.swift in Sources */,
+				6AEBDC87206556DD008937E5 /* searchController.swift in Sources */,
+				6A1EF42E2074A8A1004EA053 /* HistoryVC.swift in Sources */,
+				6A5EB69B206AA8310060CD29 /* TripHistoryVC.swift in Sources */,
+				6A1BB9C720814DE400F00C73 /* changeEmailVC.swift in Sources */,
+				6A246496207B13FD004F914E /* reportLostItem.swift in Sources */,
+				6A8C2FED206264CB00218897 /* ProfileView.swift in Sources */,
+				6A4D3AE920619FC9007CE14C /* MainApiClient.swift in Sources */,
+				6A1EF42B2074A49F004EA053 /* CommentTxtView.swift in Sources */,
+				6AAE2C39205F81AA001DEF07 /* Constant.swift in Sources */,
+				6A643B6F21235CAA005A84C7 /* BalloonMarker.swift in Sources */,
+				6A549706205F6ED3006346D7 /* AppDelegate.swift in Sources */,
+				6A37A7852076B40800888152 /* Rider_trip_model.swift in Sources */,
+				6A37A77D20752DAE00888152 /* socialSecurityVC.swift in Sources */,
+				6A80F5BC2068555A007044D7 /* DataService.swift in Sources */,
+				6A5EB691206A0C150060CD29 /* modifiedChooseCarView.swift in Sources */,
+				6A37A77720752D7700888152 /* DriverLicsVC.swift in Sources */,
+				6A2778BE21118F490049B6FB /* MapView.swift in Sources */,
+				6A24649B207BCBFB004F914E /* driverTripDetailVC.swift in Sources */,
+				6A37A77920752D8700888152 /* LicensePlateVC.swift in Sources */,
+				6A37A7812075C56400888152 /* SwiftLoader.swift in Sources */,
+				6AFFF8BB20849FF5004B2B9B /* reportVC.swift in Sources */,
+				6AEBDC892065605C008937E5 /* ModifiedSearchBar.swift in Sources */,
+				6A181D7320720A84005DCAC7 /* UpdateService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A549712205F6ED4006346D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A54971B205F6ED4006346D7 /* Campus_ConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A54971D205F6ED4006346D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A549726205F6ED4006346D7 /* Campus_ConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A549718205F6ED4006346D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A549701205F6ED3006346D7 /* CC-DRIVER */;
+			targetProxy = 6A549717205F6ED4006346D7 /* PBXContainerItemProxy */;
+		};
+		6A549723205F6ED4006346D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A549701205F6ED3006346D7 /* CC-DRIVER */;
+			targetProxy = 6A549722205F6ED4006346D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A549709205F6ED3006346D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A54970A205F6ED3006346D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A54970E205F6ED4006346D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A54970F205F6ED4006346D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A549728205F6ED4006346D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A549729205F6ED4006346D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A54972B205F6ED4006346D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7EC580DA64BA3C955303E4 /* Pods-CC-DRIVER.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CC-DRIVER/CC-DRIVER.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXVXS9V5X7;
+				INFOPLIST_FILE = "CC-DRIVER/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CC-DRIVER-LLC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = header.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6A54972C205F6ED4006346D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA495EAC4ABA7FCEF9DF613 /* Pods-CC-DRIVER.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CC-DRIVER/CC-DRIVER.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXVXS9V5X7;
+				INFOPLIST_FILE = "CC-DRIVER/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CC-DRIVER-LLC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = header.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6A54972E205F6ED4006346D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZJV9V2BS9;
+				INFOPLIST_FILE = "Campus ConnectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Campus-Connect.Campus-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CC-DRIVER.app/CC-DRIVER";
+			};
+			name = Debug;
+		};
+		6A54972F205F6ED4006346D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZJV9V2BS9;
+				INFOPLIST_FILE = "Campus ConnectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Campus-Connect.Campus-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CC-DRIVER.app/CC-DRIVER";
+			};
+			name = Release;
+		};
+		6A549731205F6ED4006346D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZJV9V2BS9;
+				INFOPLIST_FILE = "Campus ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Campus-Connect.Campus-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Campus Connect";
+			};
+			name = Debug;
+		};
+		6A549732205F6ED4006346D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZJV9V2BS9;
+				INFOPLIST_FILE = "Campus ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Campus-Connect.Campus-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Campus Connect";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A5496FD205F6ED3006346D7 /* Build configuration list for PBXProject "CC-DRIVER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A549728205F6ED4006346D7 /* Debug */,
+				6A549729205F6ED4006346D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A54972A205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A54972B205F6ED4006346D7 /* Debug */,
+				6A54972C205F6ED4006346D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A54972D205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A54972E205F6ED4006346D7 /* Debug */,
+				6A54972F205F6ED4006346D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A549730205F6ED4006346D7 /* Build configuration list for PBXNativeTarget "CC-DRIVERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A549731205F6ED4006346D7 /* Debug */,
+				6A549732205F6ED4006346D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A5496FA205F6ED3006346D7 /* Project object */;
+}

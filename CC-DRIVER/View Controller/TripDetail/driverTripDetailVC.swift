@@ -26,6 +26,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var startLocationLbl: UILabel!
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var mapView2: GMSMapView!
     
     @IBOutlet weak var riderAvatar: borderAvatarView!
     
@@ -56,7 +57,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        mapView.delegate = self
+        mapView2.delegate = self
         
         let times = time as? TimeInterval
         let date = Date(timeIntervalSince1970: times!/1000)
@@ -64,7 +65,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         timeFormatter.timeStyle = DateFormatter.Style.short
         let timess = timeFormatter.string(from: date)
         
-        mapView.isUserInteractionEnabled = false
+        mapView2.isUserInteractionEnabled = true
         
         if dayDifference(from: date) == "Today" {
             
@@ -108,10 +109,20 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         let fullNameArr = self.pickUp_name?.components(separatedBy: " ")
         riderNameLbl.text = fullNameArr![0].firstUppercased
         
-        let starLocation = CLLocationCoordinate2D(latitude: StarLat!, longitude: StarLon!)
-        let desLocation = CLLocationCoordinate2D(latitude: desLat!, longitude: desLon!)
+        
         
         styleMap()
+        
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        let starLocation = CLLocationCoordinate2D(latitude: StarLat!, longitude: StarLon!)
+        let desLocation = CLLocationCoordinate2D(latitude: desLat!, longitude: desLon!)
         
         
         self.drawDirection(pickup: starLocation, destination: desLocation) {
@@ -119,6 +130,8 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
             self.fitAllMarkers(_path: self.path)
             
         }
+        
+        
     }
     
     
@@ -209,7 +222,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         do {
             // Set the map style by passing the URL of the local file.
             if let styleURL = Bundle.main.url(forResource: "customizedMap", withExtension: "json") {
-                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+                mapView2.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
             } else {
                 NSLog("Unable to find style.json")
             }
@@ -228,7 +241,8 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         let destinations = "\(destination.latitude),\(destination.longitude)"
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destinations)&mode=driving&sensor=true&key=\(googleMap_Key)"
         
-        self.polyline.map = nil
+        
+       // self.polyline.map = nil
         
         
         Alamofire.request(url).responseJSON { response in
@@ -245,7 +259,8 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
                 self.polyline = GMSPolyline.init(path: self.path)
                 self.polyline.strokeWidth = 4
                 self.polyline.strokeColor = UIColor.black
-                self.polyline.map = self.mapView
+                self.polyline.map = self.mapView2
+                
                 
                 completed()
                
@@ -255,9 +270,9 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
             
             
             marker.position = pickup
-            marker.map = self.mapView
+            marker.map = self.mapView2
             marker.isTappable = false
-            marker.isTappable = false
+            
             let icons = resizeImage(image: UIImage(named: "user")!, targetSize: CGSize(width: 30.0, height: 30.0))
             marker.icon = icons
             
@@ -269,13 +284,10 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
             let gameMarker = GMSMarker()
             gameMarker.position = destination
             gameMarker.icon = IconImages
-            gameMarker.tracksViewChanges = true
-            gameMarker.tracksInfoWindowChanges = true
+            
+            gameMarker.map = self.mapView2
             
             
-            gameMarker.infoWindowAnchor = CGPoint(x: 0.5, y: 0.1)
-            gameMarker.map = self.mapView
-            self.mapView.selectedMarker = gameMarker
             
         }
         
@@ -287,7 +299,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         for index in 1..._path.count() {
             bounds = bounds.includingCoordinate(_path.coordinate(at: index))
         }
-        mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 60.0))
+        mapView2.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 60))
         
     }
     

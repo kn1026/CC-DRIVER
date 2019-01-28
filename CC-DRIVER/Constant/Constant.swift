@@ -62,6 +62,8 @@ var userType = ""
 var placeID1 = ""
 var placeID2 = ""
 
+var notiCalled = false
+
 var isSelected = false
 
 var basePrice = ""

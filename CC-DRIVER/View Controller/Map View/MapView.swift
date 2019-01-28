@@ -322,6 +322,8 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         setupProgress()
         self.checkIfDriverIsInProgress()
         self.notiWhenTip()
+        
+        
     }
     
     @objc func closeKeyboard() {
@@ -492,7 +494,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             } else {
                 
                 
-               print(userUID)
+               
         DataService.instance.mainDataBaseRef.child("On_Trip_arrived").child("Driver").child(userUID).observeSingleEvent(of: .value, with: { (arrived) in
                     
                     
@@ -585,10 +587,6 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                         
                         
                         
-                        
-                    } else {
-                        
-                        print("dkm")
                         
                     }
                     
@@ -753,6 +751,11 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         checkIfRiderRateForRide()
         loadMyRate()
+        
+        if notiCalled == true {
+            self.single_ObserveTrip()
+            notiCalled = false
+        }
         
         
     }
@@ -1657,13 +1660,60 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 self.driverMarker.tracksViewChanges = true
                 self.driverMarker.map = self.mapView
                 
-                print("Updated")
+                
                 
                 
                 
             }
             
         })
+        
+    }
+    
+    
+    func single_ObserveTrip() {
+        
+        
+        DataService.instance.mainDataBaseRef.child("Pending_driver").child(userUID).observeSingleEvent(of: .value, with: { (tripData) in
+            
+            if tripData.exists() {
+                
+                if let snap = tripData.children.allObjects as? [DataSnapshot] {
+                    
+                    for item in snap {
+                        if let postDict = item.value as? Dictionary<String, Any> {
+                            
+                            if let riderUID = postDict["UID"] as? String {
+                                
+                                if let trip_key = postDict["key"] as? String {
+                                    
+                                    self.get_trip(rider_uid: riderUID, trip_key: trip_key)
+                                    
+                                    
+                                    
+                                    
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+                
+                
+                
+                
+            }
+            
+            
+            
+        })
+        
         
     }
 
@@ -1758,34 +1808,17 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                     if UIApplication.shared.applicationState == .active {
                         
                         
-                        //self.assignTrip(TripDataResult: TripDataResult)
+                       LocalNotification.dispatchlocalNotification(with: "You just received a ride request!", body: "Check it out now before it expires in 20 seconds.")
+                        
                         
                     } else {
                         
                         LocalNotification.dispatchlocalNotification(with: "You just received a ride request!", body: "Check it out now before it expires in 20 seconds.")
                         
                         
-                        /*
-                        delay(10.0) { () -> () in
-                            
-                            
-                            if UIApplication.shared.applicationState == .active {
-                                
-                               // self.assignTrip(TripDataResult: TripDataResult)
-                                
-                                
-                            } else {
-                                
-                                
-                                self.cancelTripRequest()
-                                
-                                
-                            }
-                            
-                            
-                        }
                         
-                        */
+                        
+                        
                         
                     }
                     
@@ -2300,6 +2333,8 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             DataService.instance.mainDataBaseRef.child("Trip_History").child("Rider").child(self.TripRiderResult.rider_UID).child(self.TripRiderResult.Trip_key).updateChildValues(["Progess": "Canceled", "Timestamp": ServerValue.timestamp()])
             
             DataService.instance.mainDataBaseRef.child("Trip_History").child("Driver").child(userUID).child(self.TripRiderResult.Trip_key).updateChildValues(["Progess": "Canceled", "Timestamp": ServerValue.timestamp()])
+            
+                DataService.instance.mainDataBaseRef.child("On_Trip_Pick_Up").child("Driver").child(userUID).removeValue()
             
             
             UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 6, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseOut, animations: ({
@@ -2846,6 +2881,9 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             
             if let dict = snapshot.value as? [String: Any] {
                 
+                
+                DataService.instance.mainDataBaseRef.child("TipNoti").child(userUID).child(snapshot.key).removeValue()
+                
                 if let RiderName  = dict["RiderName"] as? String, let Timestamp = dict["Timestamp"], let Price = dict["Price"] as? Double {
                     
                     let time = Timestamp as? TimeInterval
@@ -2855,9 +2893,11 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                     timeFormatter.timeStyle = DateFormatter.Style.short
                     let times = timeFormatter.string(from: date)
                     
-                    let sms = "You have recieved $\(Price) from \(RiderName) at \(times). You can check it out in the payment setting and you will receive your money on the next business day"
+                    let sms = "You have recieved $\(Price/100).00 from \(RiderName) at \(times). You can check it out in the payment setting and you will receive your money on the next business day"
                     
                     LocalNotification.dispatchlocalNotification(with: "Congratulations", body: sms)
+                    
+                    
                     
                     
                     
@@ -2870,6 +2910,8 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         
     }
+    
+  
     
     func make_refund(capturedKey: String) {
         

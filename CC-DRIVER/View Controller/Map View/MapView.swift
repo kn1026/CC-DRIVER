@@ -93,7 +93,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
     @IBOutlet weak var RiderRequestAvatarImg: UIImageView!
     @IBOutlet weak var userImageView: UIImageView!
     
-    
+    var toDestination = false
     var driverLocation = CLLocationCoordinate2D()
     var driverMarker = GMSMarker()
     var isAccepted = false
@@ -149,6 +149,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
     @IBOutlet weak var driveSignOut: UIButton!
     var eta = ""
     
+    @IBOutlet weak var pickUpBtn: UIButton!
     
     @IBOutlet weak var scrollView: UIScrollView!
    
@@ -324,6 +325,10 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         self.notiWhenTip()
         
         
+        
+        Messaging.messaging().subscribe(toTopic: "CC-Driver") { error in
+            print("Subscribed to CC-Drvier topic")
+        }
     }
     
     @objc func closeKeyboard() {
@@ -1020,11 +1025,114 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         if let coor =  locations.last?.coordinate {
             
-            if isAccepted != false {
+            if toDestination != true {
                 
-                UpdateService.instance.updateOnTripDriverLocation(withCoordinate: coor, key: self.TripRiderResult.Trip_key)
+                if isAccepted != false {
+                    
+                    UpdateService.instance.updateOnTripDriverLocation(withCoordinate: coor, key: self.TripRiderResult.Trip_key)
+                    
+                    let des = CLLocation(latitude: TripRiderResult.PickUp_Lat, longitude: TripRiderResult.PickUp_Lon)
+                    let coors = locations.last
+                    
+                    let distance = calculateDistanceBetweenTwoCoordinator(baseLocation: coors!, destinationLocation: des)
+                    
+                    self.marker.position = coor
+                    self.marker.tracksViewChanges = true
+                    self.marker.map = self.mapView
+                    
+                    
+                    if distance < 1.0 {
+                        
+                        self.pickUpBtn.isHidden = false
+                        
+                        
+                        if self.IsSendMess == false || self.IsDeliverMess == false {
+                            
+                            
+                            signalResponse = 0
+                            
+                            checkRiderSignalOnTrip(riderUID: TripRiderResult.rider_UID, key: TripRiderResult.Trip_key)
+                            
+                            
+                            
+                            delay(3) {
+                                
+                                
+                                DataService.instance.mainDataBaseRef.child("Ride_Signal_Check").child(self.TripRiderResult.Trip_key).child(self.TripRiderResult.rider_UID).child("Response").removeAllObservers()
+                                
+                                if self.IsSendMess == false {
+                                    
+                                    if self.signalResponse == 0 {
+                                        
+                                        
+                                        
+                                        let sms = "You driver is about \(round(distance * 100) / 100) miles away, please prepare soon"
+                                        self.sendSmsNoti(Phone: self.TripRiderResult.PickUp_Phone, text: sms)
+                                        
+                                        
+                                    } else {
+                                        
+                                        // rider loaders local noti
+                                        
+                                    }
+                                    
+                                    
+                                    self.IsSendMess = true
+                                    
+                                } else {
+                                    
+                                    if distance < 0.2 {
+                                        
+                                        if self.IsDeliverMess == false {
+                                            
+                                            if self.signalResponse == 0 {
+                                                
+                                                let sms = "You driver is here !!!"
+                                                self.sendSmsNoti(Phone: self.TripRiderResult.PickUp_Phone, text: sms)
+                                                
+                                            } else {
+                                                
+                                                
+                                                // rider loads local noti
+                                            }
+                                            
+                                            
+                                            self.IsDeliverMess = true
+                                            
+                                            
+                                        }
+                                        
+                                        
+                                    }
+                                    
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    }
+                    
+                    
+                    
+                } else {
+                    
+                    
+                    UpdateService.instance.updateDriverLocation(withCoordinate: coor)
+                    
+                }
+            } else {
                 
-                let des = CLLocation(latitude: TripRiderResult.PickUp_Lat, longitude: TripRiderResult.PickUp_Lon)
+                let des = CLLocation(latitude: TripRiderResult.Destination_Lat, longitude: TripRiderResult.Destination_Lon)
                 let coors = locations.last
                 
                 let distance = calculateDistanceBetweenTwoCoordinator(baseLocation: coors!, destinationLocation: des)
@@ -1033,95 +1141,16 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 self.marker.tracksViewChanges = true
                 self.marker.map = self.mapView
                 
-                print("Updated")
-                
-                
-                
                 
                 if distance < 1.0 {
                     
-                    if self.IsSendMess == false || self.IsDeliverMess == false {
-                        
-                        
-                        signalResponse = 0
-                        
-                        checkRiderSignalOnTrip(riderUID: TripRiderResult.rider_UID, key: TripRiderResult.Trip_key)
-                        
-                        
-                        
-                        delay(3) {
-                            
-                            
-                        DataService.instance.mainDataBaseRef.child("Ride_Signal_Check").child(self.TripRiderResult.Trip_key).child(self.TripRiderResult.rider_UID).child("Response").removeAllObservers()
-                            
-                            if self.IsSendMess == false {
-                                
-                                if self.signalResponse == 0 {
-                                    
-                                    let sms = "You driver is about \(round(distance * 100) / 100) miles away, please prepare soon"
-                                    self.sendSmsNoti(Phone: self.TripRiderResult.PickUp_Phone, text: sms)
-                                    
-                                    
-                                } else {
-                                    
-                                    // rider loaders local noti
-                                    
-                                }
-                                
-                                
-                                self.IsSendMess = true
-                                
-                            } else {
-                                
-                                if distance < 0.2 {
-                                    
-                                    if self.IsDeliverMess == false {
-                                        
-                                        if self.signalResponse == 0 {
-                                            
-                                            let sms = "You driver is here !!!"
-                                            self.sendSmsNoti(Phone: self.TripRiderResult.PickUp_Phone, text: sms)
-                                            
-                                        } else {
-                                            
-                                            
-                                            // rider loads local noti
-                                        }
-                                        
-                                        
-                                        self.IsDeliverMess = true
-                                        
-                                        
-                                    }
-                                    
-                                    
-                                }
-                                
-                                
-                            }
-                            
-                        }
-                        
-                    }
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    arriveBtn.isHidden = false
                     
                 }
                 
-                
-                
-            } else {
-                
-                
-                UpdateService.instance.updateDriverLocation(withCoordinate: coor)
-                
             }
+            
+            
             
             
         }
@@ -2032,6 +2061,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         isAccepted = true
         IsSendMess = false
         IsDeliverMess = false
+        toDestination = false
         
         progress.stopAnimation()
         Zendrive.startDrive(current_request_trip_key)
@@ -2097,6 +2127,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         cancelView.isHidden = false
         pickUpView.isHidden = false
+        pickUpBtn.isHidden = true
         arriveBtn.isHidden = true
         
         topDirectionView.isHidden = false
@@ -3026,7 +3057,8 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         progressAddress.text = self.TripRiderResult.destinationAddress
         pickUpView.isHidden = true
         cancelView.isHidden = true
-        arriveBtn.isHidden = false
+        //arriveBtn.isHidden = false
+        toDestination = true
         
         self.navigationCoordinate = CLLocationCoordinate2D(latitude: self.TripRiderResult.Destination_Lat, longitude: self.TripRiderResult.Destination_Lon)
         
@@ -3159,12 +3191,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         
     }
-    
-    @IBAction func submitRatingBtnPressed(_ sender: Any) {
-        
-        
-        
-    }
+
     
     
     func temporaryTerminateAcceptingRide() {

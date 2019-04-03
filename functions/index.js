@@ -12,16 +12,32 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 });
 
 
-exports.observeDriver_Notification = functions.database.ref('/Campus-Connect/Trip_notification_driver/{uid}/{status}')
-  .onCreate(event => {
+exports.observe_request_ride = functions.database.ref('/Campus-Connect/Request_noti/{uid}/{likingId}')
+  .onCreate((snap,context) => {
 
-    var driverUID = event.params.uid;
+    var payload = {
+      notification: {
+        title: "Notice !!!",
+        body: 'Students are currently looking for rides right now, go online and start giving rides!',
+        badge : '1',
+        sound: 'default',
+      },
 
-    // let's log out some messages
-
-    console.log('Send noti to this user' + driverUID + 'status');
-
-
+      data: {
+        type: "abcd",
+      }
 
 
-    })
+    };
+
+    admin.messaging().sendToTopic('CC-Driver',payload)
+    .then(response => {
+      console.log("Successfully sent message:", response);
+      return response
+    }).catch(function(error) {
+      console.log("Error sending message:", error);
+      return error
+    });
+
+
+})

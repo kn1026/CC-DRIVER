@@ -31,6 +31,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
     @IBOutlet weak var riderAvatar: borderAvatarView!
     
     
+    
     var time: Any?
     var price: Double?
     var progress: String?
@@ -299,7 +300,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         for index in 1..._path.count() {
             bounds = bounds.includingCoordinate(_path.coordinate(at: index))
         }
-        mapView2.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 60))
+        mapView2.moveCamera(GMSCameraUpdate.fit(bounds, withPadding: 60))
         
     }
     

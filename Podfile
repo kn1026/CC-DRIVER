@@ -4,12 +4,10 @@
 target 'CC-DRIVER' do
 
 
-    
     pod 'Stripe'
     pod ‘Firebase’
     pod 'Fabric', '~> 1.7.2'
     pod 'Crashlytics', '~> 3.9.3'
-    pod 'SidebarOverlay'
     pod ‘Firebase/Auth’
     pod ‘Firebase/Database’
     pod ‘Firebase/Storage’
@@ -20,8 +18,8 @@ target 'CC-DRIVER' do
     pod 'GooglePlaces'
     pod 'SwiftOCR'
     pod 'ZendriveSDK', :git => 'https://bitbucket.org/zendrive-root/zendrive_cocoapod.git', :tag => '5.4.3'
-    pod 'Alamofire', '~> 4.5'
-    pod 'AlamofireImage', '~> 3.3'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
     pod 'GeoFire'
     pod 'SinchVerification-Swift'
     pod 'KDCircularProgress'
@@ -34,6 +32,7 @@ target 'CC-DRIVER' do
     pod 'MGSwipeTableCell'
     pod 'SCLAlertView'
     pod "Device", '~> 3.0.3'
+    
      
 
   use_frameworks!

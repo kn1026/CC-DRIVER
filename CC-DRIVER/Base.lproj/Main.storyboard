@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.59" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8m-xx-eCA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8m-xx-eCA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.45"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1374,8 +1374,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iwr-u7-3kW" firstAttribute="leading" secondItem="Phv-6Y-72b" secondAttribute="leading" id="0WF-b9-JJ9"/>
-                            <constraint firstItem="8Nh-Zd-jwG" firstAttribute="leading" secondItem="Phv-6Y-72b" secondAttribute="leading" id="1kf-2S-f5v"/>
+                            <constraint firstItem="iwr-u7-3kW" firstAttribute="leading" secondItem="0RF-Qe-sS2" secondAttribute="leading" id="0WF-b9-JJ9"/>
+                            <constraint firstItem="8Nh-Zd-jwG" firstAttribute="leading" secondItem="0RF-Qe-sS2" secondAttribute="leading" id="1kf-2S-f5v"/>
                             <constraint firstItem="oS7-Fa-jmR" firstAttribute="width" secondItem="d29-D9-eUX" secondAttribute="width" id="3zO-2H-lSR"/>
                             <constraint firstItem="JRF-av-5XO" firstAttribute="top" secondItem="0RF-Qe-sS2" secondAttribute="top" id="4g0-8l-b2Z"/>
                             <constraint firstAttribute="bottom" secondItem="5mb-Rt-Gvf" secondAttribute="bottom" id="9kO-4B-6dj"/>
@@ -1387,7 +1387,6 @@
                             <constraint firstItem="JRF-av-5XO" firstAttribute="trailing" secondItem="0RF-Qe-sS2" secondAttribute="trailing" id="RUx-Ff-YEq"/>
                             <constraint firstAttribute="trailing" secondItem="5mb-Rt-Gvf" secondAttribute="trailing" id="TJH-fK-zR4"/>
                             <constraint firstItem="5mb-Rt-Gvf" firstAttribute="top" secondItem="0RF-Qe-sS2" secondAttribute="top" id="U1a-mn-M8z"/>
-                            <constraint firstItem="Phv-6Y-72b" firstAttribute="bottom" secondItem="7vM-ku-KtJ" secondAttribute="bottom" id="axX-36-RgF"/>
                             <constraint firstAttribute="trailing" secondItem="heO-MX-hR1" secondAttribute="trailing" constant="16" id="b2p-Yl-N6g"/>
                             <constraint firstItem="JRF-av-5XO" firstAttribute="leading" secondItem="0RF-Qe-sS2" secondAttribute="leading" id="ccb-bU-4XU"/>
                             <constraint firstItem="qna-jc-iAB" firstAttribute="centerY" secondItem="0RF-Qe-sS2" secondAttribute="centerY" id="eIA-he-Vfy"/>
@@ -1395,15 +1394,15 @@
                             <constraint firstItem="d29-D9-eUX" firstAttribute="top" secondItem="0RF-Qe-sS2" secondAttribute="top" id="hNn-xy-b6w"/>
                             <constraint firstItem="8Nh-Zd-jwG" firstAttribute="top" secondItem="0RF-Qe-sS2" secondAttribute="top" id="nHg-Ea-ix4"/>
                             <constraint firstItem="JRF-av-5XO" firstAttribute="bottom" secondItem="0RF-Qe-sS2" secondAttribute="bottom" id="noj-li-Qvl"/>
-                            <constraint firstItem="7vM-ku-KtJ" firstAttribute="trailing" secondItem="Phv-6Y-72b" secondAttribute="trailing" id="pPV-Zc-ZVU"/>
-                            <constraint firstItem="Phv-6Y-72b" firstAttribute="trailing" secondItem="8Nh-Zd-jwG" secondAttribute="trailing" id="qxF-3g-H43"/>
+                            <constraint firstItem="7vM-ku-KtJ" firstAttribute="bottom" secondItem="0RF-Qe-sS2" secondAttribute="bottom" id="oOG-1L-fvk"/>
+                            <constraint firstItem="7vM-ku-KtJ" firstAttribute="trailing" secondItem="0RF-Qe-sS2" secondAttribute="trailing" id="pPV-Zc-ZVU"/>
+                            <constraint firstAttribute="trailing" secondItem="8Nh-Zd-jwG" secondAttribute="trailing" id="qxF-3g-H43"/>
                             <constraint firstItem="d29-D9-eUX" firstAttribute="leading" secondItem="0RF-Qe-sS2" secondAttribute="leading" id="szU-9d-vJc"/>
-                            <constraint firstItem="7vM-ku-KtJ" firstAttribute="leading" secondItem="Phv-6Y-72b" secondAttribute="leading" id="v82-tD-fnw"/>
+                            <constraint firstItem="7vM-ku-KtJ" firstAttribute="leading" secondItem="0RF-Qe-sS2" secondAttribute="leading" id="v82-tD-fnw"/>
                             <constraint firstAttribute="bottom" secondItem="heO-MX-hR1" secondAttribute="bottom" constant="130" id="v8S-dJ-JOD"/>
                             <constraint firstAttribute="trailing" secondItem="d29-D9-eUX" secondAttribute="trailing" id="xd6-rl-mrN"/>
-                            <constraint firstItem="Phv-6Y-72b" firstAttribute="trailing" secondItem="iwr-u7-3kW" secondAttribute="trailing" id="yg2-4I-8c5"/>
+                            <constraint firstAttribute="trailing" secondItem="iwr-u7-3kW" secondAttribute="trailing" id="yg2-4I-8c5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Phv-6Y-72b"/>
                     </view>
                     <connections>
                         <outlet property="RiderRequestAvatarImg" destination="3vs-tD-hUo" id="3SO-HR-1Jg"/>

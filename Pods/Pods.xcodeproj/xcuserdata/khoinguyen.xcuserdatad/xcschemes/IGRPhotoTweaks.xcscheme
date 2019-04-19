@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A8433C3D3687EB71E778C421464E6E9"
+               BlueprintIdentifier = "FB522B556A48B16B285C3D9DCB377A9D"
                BlueprintName = "IGRPhotoTweaks"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "IGRPhotoTweaks.framework">

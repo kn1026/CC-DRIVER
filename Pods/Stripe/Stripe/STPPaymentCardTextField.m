@@ -163,7 +163,7 @@ CGFloat const STPPaymentCardTextFieldMinimumPadding = 10;
     expirationField.isAccessibilityElement = NO;
     expirationField.accessibilityLabel = STPLocalizedString(@"expiration date", @"accessibility label for text field");
     self.expirationField = expirationField;
-    self.expirationPlaceholder = @"MM/YY";
+    self.expirationPlaceholder = STPLocalizedString(@"MM/YY", @"label for text field to enter card expiry");
         
     STPFormTextField *cvcField = [self buildTextField];
     cvcField.tag = STPCardFieldTypeCVC;
@@ -471,13 +471,20 @@ CGFloat const STPPaymentCardTextFieldMinimumPadding = 10;
     return [firstResponder becomeFirstResponder];
 }
 
+/**
+ Returns the next text field to be edited, in priority order:
+
+ 1. If we're currently in a text field, returns the next one (ignoring postalCodeField if postalCodeEntryEnabled == NO)
+ 2. Otherwise, returns the first invalid field (either cycling back from the end or as it gains 1st responder)
+ 3. As a final fallback, just returns the last field
+ */
 - (nonnull STPFormTextField *)nextFirstResponderField {
     STPFormTextField *currentFirstResponder = [self currentFirstResponderField];
     if (currentFirstResponder) {
         NSUInteger index = [self.allFields indexOfObject:currentFirstResponder];
         if (index != NSNotFound) {
             STPFormTextField *nextField = [self.allFields stp_boundSafeObjectAtIndex:index + 1];
-            if (self.postalCodeEntryEnabled || nextField != self.postalCodeField) {
+            if (nextField != nil && (self.postalCodeEntryEnabled || nextField != self.postalCodeField)) {
                 return nextField;
             }
         }
@@ -618,10 +625,10 @@ CGFloat const STPPaymentCardTextFieldMinimumPadding = 10;
         // if we are not showing the postal code entry field.
         self.internalCardParams.address.postalCode = self.postalCode;
     }
-    return self.internalCardParams;
+    return [self.internalCardParams copy];
 }
 
-- (void)setCardParams:(STPCardParams *)cardParams {
+- (void)setCardParams:(STPCardParams *)callersCardParams {
     /*
      Due to the way this class is written, programmatically setting field text
      behaves identically to user entering text (and will have the same forwarding 
@@ -638,21 +645,28 @@ CGFloat const STPPaymentCardTextFieldMinimumPadding = 10;
      */
     STPFormTextField *originalSubResponder = self.currentFirstResponderField;
 
-    self.internalCardParams = cardParams;
-    [self setText:cardParams.number inField:STPCardFieldTypeNumber];
-    BOOL expirationPresent = cardParams.expMonth && cardParams.expYear;
+    /*
+     #1031 small footgun hiding here. Use copies to protect from mutations of
+     `internalCardParams` in the `cardParams` property accessor and any mutations
+     the app code might make to their `callersCardParams` object.
+     */
+    STPCardParams *desiredCardParams = [callersCardParams copy];
+    self.internalCardParams = [desiredCardParams copy];
+
+    [self setText:desiredCardParams.number inField:STPCardFieldTypeNumber];
+    BOOL expirationPresent = desiredCardParams.expMonth && desiredCardParams.expYear;
     if (expirationPresent) {
         NSString *text = [NSString stringWithFormat:@"%02lu%02lu",
-                          (unsigned long)cardParams.expMonth,
-                          (unsigned long)cardParams.expYear%100];
+                          (unsigned long)desiredCardParams.expMonth,
+                          (unsigned long)desiredCardParams.expYear%100];
         [self setText:text inField:STPCardFieldTypeExpiration];
     }
     else {
         [self setText:@"" inField:STPCardFieldTypeExpiration];
     }
-    [self setText:cardParams.cvc inField:STPCardFieldTypeCVC];
+    [self setText:desiredCardParams.cvc inField:STPCardFieldTypeCVC];
 
-    [self setText:cardParams.address.postalCode inField:STPCardFieldTypePostalCode];
+    [self setText:desiredCardParams.address.postalCode inField:STPCardFieldTypePostalCode];
 
     if ([self isFirstResponder]) {
         STPCardFieldType fieldType = originalSubResponder.tag;
@@ -1292,6 +1306,8 @@ typedef void (^STPLayoutAnimationCompletionBlock)(BOOL completed);
     if (fieldType == STPCardFieldTypeNumber) {
         [self updateImageForFieldType:fieldType];
         [self updateCVCPlaceholder];
+        // Changing the card number field can invalidate the cvc, e.g. going from 4 digit Amex cvc to 3 digit Visa
+        self.cvcField.validText = [self.viewModel validationStateForField:STPCardFieldTypeCVC] != STPCardValidationStateInvalid;
     }
     
     STPCardValidationState state = [self.viewModel validationStateForField:fieldType];
@@ -1315,6 +1331,14 @@ typedef void (^STPLayoutAnimationCompletionBlock)(BOOL completed);
                 if (sanitizedCvc.length < [STPCardValidator maxCVCLengthForCardBrand:self.viewModel.brand]) {
                     break;
                 }
+            } else if (fieldType == STPCardFieldTypePostalCode) {
+                /*
+                 Similar to the UX problems on CVC, since our Postal Code validation
+                 is pretty light, we want to block auto-advance here. In the US, this
+                 allows users to enter 9 digit zips if they want, and as many as they
+                 need in non-US countries (where >0 characters is "valid")
+                 */
+                break;
             }
 
             // This is a no-op if this is the last field & they're all valid
@@ -1471,6 +1495,21 @@ typedef NS_ENUM(NSInteger, STPFieldEditingTransitionCallSite) {
     }
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == [self lastSubField] && [self firstInvalidSubField] == nil) {
+        // User pressed return in the last field, and all fields are valid
+        if ([self.delegate respondsToSelector:@selector(paymentCardTextFieldWillEndEditingForReturn:)]) {
+            [self.delegate paymentCardTextFieldWillEndEditingForReturn:self];
+        }
+        [self resignFirstResponder];
+    } else {
+        // otherwise, move to the next field
+        [[self nextFirstResponderField] becomeFirstResponder];
+    }
+
+    return NO;
+}
+
 - (UIImage *)brandImage {
     STPCardFieldType fieldType = STPCardFieldTypeNumber;
     if (self.currentFirstResponderField) {
@@ -1564,9 +1603,9 @@ typedef NS_ENUM(NSInteger, STPFieldEditingTransitionCallSite) {
 
 - (NSString *)defaultCVCPlaceholder {
     if (self.viewModel.brand == STPCardBrandAmex) {
-        return STPNonLocalizedString(@"CVV");
+        return STPLocalizedString(@"CVV", @"Label for entering CVV in text field");
     } else {
-        return STPNonLocalizedString(@"CVC");
+        return STPLocalizedString(@"CVC", @"Label for entering CVC in text field");
     }
 }
 

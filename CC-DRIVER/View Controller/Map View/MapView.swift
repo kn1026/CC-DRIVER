@@ -1043,7 +1043,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                     
                     if distance < 1.0 {
                         
-                        self.pickUpBtn.isHidden = false
+                        //self.pickUpBtn.isHidden = false
                         
                         
                         if self.IsSendMess == false || self.IsDeliverMess == false {
@@ -1142,11 +1142,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 self.marker.map = self.mapView
                 
                 
-                if distance < 1.0 {
-                    
-                    arriveBtn.isHidden = false
-                    
-                }
+               
                 
             }
             
@@ -2127,7 +2123,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         cancelView.isHidden = false
         pickUpView.isHidden = false
-        pickUpBtn.isHidden = true
+        pickUpBtn.isHidden = false
         arriveBtn.isHidden = true
         
         topDirectionView.isHidden = false
@@ -3053,11 +3049,12 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
     func UpdateUIAfterPickedUp() {
         
         
+        
         progressMode.text = "Go to"
         progressAddress.text = self.TripRiderResult.destinationAddress
         pickUpView.isHidden = true
         cancelView.isHidden = true
-        //arriveBtn.isHidden = false
+        arriveBtn.isHidden = false
         toDestination = true
         
         self.navigationCoordinate = CLLocationCoordinate2D(latitude: self.TripRiderResult.Destination_Lat, longitude: self.TripRiderResult.Destination_Lon)

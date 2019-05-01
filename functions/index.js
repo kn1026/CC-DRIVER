@@ -41,3 +41,40 @@ exports.observe_request_ride = functions.database.ref('/Campus-Connect/Request_n
 
 
 })
+
+
+
+exports.observe_request_ride_school = functions.database.ref('/Campus-Connect/Request_noti_school/{key}/{school}')
+  .onCreate((snap,context) => {
+
+
+    var key = context.params.key;
+    var school = context.params.school;
+
+
+    var payload = {
+      notification: {
+        title: "Notice !!!",
+        body: 'Students around ' + school + ' are currently looking for rides right now, go online and start giving rides!',
+        badge : '1',
+        sound: 'default',
+      },
+
+      data: {
+        type: key,
+      }
+
+
+    };
+
+    admin.messaging().sendToTopic(key,payload)
+    .then(response => {
+      console.log("Successfully sent message:", response);
+      return response
+    }).catch(function(error) {
+      console.log("Error sending message:", error);
+      return error
+    });
+
+
+})

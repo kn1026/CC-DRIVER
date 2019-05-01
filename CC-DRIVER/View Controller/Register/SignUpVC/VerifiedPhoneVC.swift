@@ -202,8 +202,35 @@ class VerifiedPhoneVC: UIViewController, UITextFieldDelegate {
                                             
                                             
                                             SwiftLoader.hide()
-                                            self.performSegue(withIdentifier:
-                                                "moveToMapVC1", sender: nil)
+                                            
+                                            
+                                            let userDefaults = UserDefaults.standard
+                                            
+                                            
+                                            if userDefaults.bool(forKey: "hasRunIntro") == false {
+                                                
+                                                userDefaults.set(true, forKey: "hasRunIntro")
+                                                userDefaults.synchronize() // This forces the app to update userDefaults
+                                                
+                                                // Run code here for the first launch
+                                                
+                                                
+                                                self.performSegue(withIdentifier:
+                                                    "moveToIntroVC1", sender: nil)
+                                                
+                                            } else {
+                                                print("The Intro has been launched before. Loading UserDefaults...")
+                                                // Run code here for every other launch but the first
+                                                
+                                                
+                                                self.performSegue(withIdentifier:
+                                                    "moveToMapVC1", sender: nil)
+                                                
+                                            }
+                                            
+                                            
+                                            
+                                            
                                             
                                             
                                         }

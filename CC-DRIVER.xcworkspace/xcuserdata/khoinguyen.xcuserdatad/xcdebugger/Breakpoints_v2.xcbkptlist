@@ -7821,11 +7821,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.685923"
+            timestampString = "578380730.6722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3204"
-            endingLineNumber = "3204"
+            startingLineNumber = "3451"
+            endingLineNumber = "3451"
             landmarkName = "temporaryTerminateAcceptingRide()"
             landmarkType = "7">
          </BreakpointContent>
@@ -7837,11 +7837,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686136"
+            timestampString = "578380730.672297"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3236"
-            endingLineNumber = "3236"
+            startingLineNumber = "3489"
+            endingLineNumber = "3489"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -7853,11 +7853,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686198"
+            timestampString = "578380730.6723551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3237"
-            endingLineNumber = "3237"
+            startingLineNumber = "3490"
+            endingLineNumber = "3490"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -7869,11 +7869,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686247"
+            timestampString = "578380730.672408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3233"
-            endingLineNumber = "3233"
+            startingLineNumber = "3486"
+            endingLineNumber = "3486"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -7885,11 +7885,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686293"
+            timestampString = "578380730.67246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3235"
-            endingLineNumber = "3235"
+            startingLineNumber = "3488"
+            endingLineNumber = "3488"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -7901,11 +7901,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686339"
+            timestampString = "578380730.6725121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "677"
-            endingLineNumber = "677"
+            startingLineNumber = "741"
+            endingLineNumber = "741"
             landmarkName = "setupZenDrive()"
             landmarkType = "7">
          </BreakpointContent>
@@ -7917,11 +7917,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6863821"
+            timestampString = "578380730.672565"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "652"
-            endingLineNumber = "652"
+            startingLineNumber = "716"
+            endingLineNumber = "716"
             landmarkName = "setupZenDrive()"
             landmarkType = "7">
          </BreakpointContent>
@@ -7933,11 +7933,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686425"
+            timestampString = "578380730.672618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "685"
-            endingLineNumber = "685"
+            startingLineNumber = "749"
+            endingLineNumber = "749"
             landmarkName = "setupZenDrive()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8237,7 +8237,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/VerifiedPhoneVC.swift"
-            timestampString = "564554929.620894"
+            timestampString = "578368333.340657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -8253,7 +8253,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.606534"
+            timestampString = "578298812.082618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -8269,7 +8269,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.606588"
+            timestampString = "578298812.0829951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -8285,7 +8285,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.60664"
+            timestampString = "578298812.083215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -8301,7 +8301,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.60669"
+            timestampString = "578298812.083425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -8317,11 +8317,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686655"
+            timestampString = "578380730.672968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2774"
-            endingLineNumber = "2774"
+            startingLineNumber = "3021"
+            endingLineNumber = "3021"
             landmarkName = "touchesBegan(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8333,11 +8333,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686704"
+            timestampString = "578380730.673025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2731"
-            endingLineNumber = "2731"
+            startingLineNumber = "2971"
+            endingLineNumber = "2971"
             landmarkName = "SubmitRatingBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8349,11 +8349,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6867501"
+            timestampString = "578380730.673079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1760"
-            endingLineNumber = "1760"
+            startingLineNumber = "1866"
+            endingLineNumber = "1866"
             landmarkName = "Driver_observeTrip()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8365,11 +8365,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6867959"
+            timestampString = "578380730.67313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1835"
-            endingLineNumber = "1835"
+            startingLineNumber = "1941"
+            endingLineNumber = "1941"
             landmarkName = "get_trip(rider_uid:trip_key:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8381,11 +8381,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6868401"
+            timestampString = "578380730.673184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2534"
-            endingLineNumber = "2534"
+            startingLineNumber = "2774"
+            endingLineNumber = "2774"
             landmarkName = "askForRating(Rider_UID:Driver_UID:Trip_key:Driver_Name:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8397,11 +8397,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686884"
+            timestampString = "578380730.673236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2568"
-            endingLineNumber = "2568"
+            startingLineNumber = "2808"
+            endingLineNumber = "2808"
             landmarkName = "arriveBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8413,11 +8413,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.686928"
+            timestampString = "578380730.673287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2576"
-            endingLineNumber = "2576"
+            startingLineNumber = "2816"
+            endingLineNumber = "2816"
             landmarkName = "arriveBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8429,11 +8429,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6869709"
+            timestampString = "578380730.6733381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2575"
-            endingLineNumber = "2575"
+            startingLineNumber = "2815"
+            endingLineNumber = "2815"
             landmarkName = "arriveBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8445,11 +8445,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687013"
+            timestampString = "578380730.67339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2574"
-            endingLineNumber = "2574"
+            startingLineNumber = "2814"
+            endingLineNumber = "2814"
             landmarkName = "arriveBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8461,11 +8461,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687055"
+            timestampString = "578380730.673442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2556"
-            endingLineNumber = "2556"
+            startingLineNumber = "2796"
+            endingLineNumber = "2796"
             landmarkName = "askForRating(Rider_UID:Driver_UID:Trip_key:Driver_Name:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8477,11 +8477,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687097"
+            timestampString = "578380730.673493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2559"
-            endingLineNumber = "2559"
+            startingLineNumber = "2799"
+            endingLineNumber = "2799"
             landmarkName = "MapView"
             landmarkType = "3">
             <Locations>
@@ -8525,11 +8525,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687139"
+            timestampString = "578380730.673575"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2560"
-            endingLineNumber = "2560"
+            startingLineNumber = "2800"
+            endingLineNumber = "2800"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -8541,11 +8541,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.68718"
+            timestampString = "578380730.673645"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1843"
-            endingLineNumber = "1843"
+            startingLineNumber = "1949"
+            endingLineNumber = "1949"
             landmarkName = "get_trip(rider_uid:trip_key:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8557,11 +8557,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6872211"
+            timestampString = "578380730.673696"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1844"
-            endingLineNumber = "1844"
+            startingLineNumber = "1950"
+            endingLineNumber = "1950"
             landmarkName = "get_trip(rider_uid:trip_key:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -8573,11 +8573,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6872621"
+            timestampString = "578380730.673746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1903"
-            endingLineNumber = "1903"
+            startingLineNumber = "2009"
+            endingLineNumber = "2009"
             landmarkName = "check_server_maintenance()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8589,7 +8589,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687306"
+            timestampString = "578380730.6737961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "321"
@@ -8605,11 +8605,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687349"
+            timestampString = "578380730.673846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
+            startingLineNumber = "443"
+            endingLineNumber = "443"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8621,11 +8621,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687393"
+            timestampString = "578380730.673898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "391"
-            endingLineNumber = "391"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8637,11 +8637,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687436"
+            timestampString = "578380730.673948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "393"
-            endingLineNumber = "393"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8653,11 +8653,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6874779"
+            timestampString = "578380730.674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "394"
-            endingLineNumber = "394"
+            startingLineNumber = "452"
+            endingLineNumber = "452"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8669,11 +8669,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687519"
+            timestampString = "578380730.67405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "392"
-            endingLineNumber = "392"
+            startingLineNumber = "450"
+            endingLineNumber = "450"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8685,11 +8685,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687562"
+            timestampString = "578380730.674099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "398"
-            endingLineNumber = "398"
+            startingLineNumber = "456"
+            endingLineNumber = "456"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
             <Locations>
@@ -8733,11 +8733,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687604"
+            timestampString = "578380730.674149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "399"
-            endingLineNumber = "399"
+            startingLineNumber = "457"
+            endingLineNumber = "457"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8749,11 +8749,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687647"
+            timestampString = "578380730.674199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8765,11 +8765,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687692"
+            timestampString = "578380730.674251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407"
+            startingLineNumber = "465"
+            endingLineNumber = "465"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8781,11 +8781,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687734"
+            timestampString = "578380730.6743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "408"
-            endingLineNumber = "408"
+            startingLineNumber = "466"
+            endingLineNumber = "466"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8797,11 +8797,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687776"
+            timestampString = "578380730.674351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "409"
-            endingLineNumber = "409"
+            startingLineNumber = "467"
+            endingLineNumber = "467"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8813,11 +8813,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687816"
+            timestampString = "578380730.674402"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "410"
-            endingLineNumber = "410"
+            startingLineNumber = "468"
+            endingLineNumber = "468"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8829,11 +8829,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687857"
+            timestampString = "578380730.6744519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "412"
-            endingLineNumber = "412"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8845,11 +8845,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6878999"
+            timestampString = "578380730.674502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
+            startingLineNumber = "472"
+            endingLineNumber = "472"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8861,11 +8861,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.68794"
+            timestampString = "578380730.674551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "499"
-            endingLineNumber = "499"
+            startingLineNumber = "563"
+            endingLineNumber = "563"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8877,11 +8877,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.687982"
+            timestampString = "578380730.6746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "501"
-            endingLineNumber = "501"
+            startingLineNumber = "565"
+            endingLineNumber = "565"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8893,11 +8893,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688023"
+            timestampString = "578380730.674656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "507"
-            endingLineNumber = "507"
+            startingLineNumber = "571"
+            endingLineNumber = "571"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8909,11 +8909,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688064"
+            timestampString = "578380730.67471"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "510"
-            endingLineNumber = "510"
+            startingLineNumber = "574"
+            endingLineNumber = "574"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8925,11 +8925,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688105"
+            timestampString = "578380730.67476"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "512"
-            endingLineNumber = "512"
+            startingLineNumber = "576"
+            endingLineNumber = "576"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8941,11 +8941,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688146"
+            timestampString = "578380730.674811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "504"
-            endingLineNumber = "504"
+            startingLineNumber = "568"
+            endingLineNumber = "568"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -8957,11 +8957,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688188"
+            timestampString = "578380730.67486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "514"
-            endingLineNumber = "514"
+            startingLineNumber = "578"
+            endingLineNumber = "578"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
             <Locations>
@@ -9005,11 +9005,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688229"
+            timestampString = "578380730.674911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "515"
-            endingLineNumber = "515"
+            startingLineNumber = "579"
+            endingLineNumber = "579"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9021,11 +9021,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688271"
+            timestampString = "578380730.67496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "594"
-            endingLineNumber = "594"
+            startingLineNumber = "658"
+            endingLineNumber = "658"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9037,11 +9037,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688314"
+            timestampString = "578380730.675011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "595"
-            endingLineNumber = "595"
+            startingLineNumber = "659"
+            endingLineNumber = "659"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9053,11 +9053,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688355"
+            timestampString = "578380730.675061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2052"
-            endingLineNumber = "2052"
+            startingLineNumber = "2194"
+            endingLineNumber = "2194"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -9069,11 +9069,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688396"
+            timestampString = "578380730.6751111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2053"
-            endingLineNumber = "2053"
+            startingLineNumber = "2195"
+            endingLineNumber = "2195"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -9085,11 +9085,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6884381"
+            timestampString = "578380730.675161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2054"
-            endingLineNumber = "2054"
+            startingLineNumber = "2196"
+            endingLineNumber = "2196"
             landmarkName = "acceptRequestTripBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9101,11 +9101,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6884789"
+            timestampString = "578380730.675212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2056"
-            endingLineNumber = "2056"
+            startingLineNumber = "2198"
+            endingLineNumber = "2198"
             landmarkName = "acceptRequestTripBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9117,11 +9117,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688519"
+            timestampString = "578380730.675262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2057"
-            endingLineNumber = "2057"
+            startingLineNumber = "2199"
+            endingLineNumber = "2199"
             landmarkName = "acceptRequestTripBtnPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9133,11 +9133,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.6885591"
+            timestampString = "578380730.675312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "517"
-            endingLineNumber = "517"
+            startingLineNumber = "581"
+            endingLineNumber = "581"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9149,11 +9149,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688601"
+            timestampString = "578380730.675377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "518"
-            endingLineNumber = "518"
+            startingLineNumber = "582"
+            endingLineNumber = "582"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9165,11 +9165,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688643"
+            timestampString = "578380730.6754301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1904"
-            endingLineNumber = "1904"
+            startingLineNumber = "2044"
+            endingLineNumber = "2044"
             landmarkName = "MapView"
             landmarkType = "3">
          </BreakpointContent>
@@ -9181,11 +9181,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688683"
+            timestampString = "578380730.675481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "508"
-            endingLineNumber = "508"
+            startingLineNumber = "572"
+            endingLineNumber = "572"
             landmarkName = "checkIfDriverIsInProgress()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9197,11 +9197,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.688724"
+            timestampString = "578380730.675532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1769"
-            endingLineNumber = "1769"
+            startingLineNumber = "1875"
+            endingLineNumber = "1875"
             landmarkName = "Driver_observeTrip()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9213,11 +9213,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/TripDetail/driverTripDetailVC.swift"
-            timestampString = "575932305.574779"
+            timestampString = "578381410.582926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "drawDirection(pickup:destination:completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9229,7 +9229,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.635201"
+            timestampString = "578380730.6756279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "193"
@@ -9245,7 +9245,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.6353461"
+            timestampString = "578380730.675668"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "192"
@@ -9261,7 +9261,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.635409"
+            timestampString = "578380730.675705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "190"
@@ -9277,7 +9277,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.608748"
+            timestampString = "578298812.0844229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -9293,7 +9293,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.608802"
+            timestampString = "578298812.084651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -9309,7 +9309,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.608853"
+            timestampString = "578298812.084859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -9325,7 +9325,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.6089"
+            timestampString = "578298812.085062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -9341,7 +9341,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Register/SignUpVC/codeIDVC.swift"
-            timestampString = "563690615.608948"
+            timestampString = "578298812.0852799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -9357,7 +9357,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.63565"
+            timestampString = "578380730.675823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "170"
@@ -9405,7 +9405,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.635942"
+            timestampString = "578380730.6758929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -9421,7 +9421,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.636021"
+            timestampString = "578380730.675962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -9437,7 +9437,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.636093"
+            timestampString = "578380730.676001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -9453,7 +9453,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/Delegate/AppDelegate.swift"
-            timestampString = "569226787.63616"
+            timestampString = "578380730.676039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -9469,11 +9469,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.68891"
+            timestampString = "578380730.6760761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2886"
-            endingLineNumber = "2886"
+            startingLineNumber = "3133"
+            endingLineNumber = "3133"
             landmarkName = "prepare_payDriver(price:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9485,45 +9485,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.68896"
+            timestampString = "578380730.6761301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1725"
-            endingLineNumber = "1725"
+            startingLineNumber = "1831"
+            endingLineNumber = "1831"
             landmarkName = "single_ObserveTrip()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CC_DRIVER.MapView.Driver_observeTrip() -&gt; ()"
-                  moduleName = "CC-DRIVER"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
-                  timestampString = "569153944.192327"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1725"
-                  endingLineNumber = "1725"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in CC_DRIVER.MapView.Driver_observeTrip() -&gt; ()"
-                  moduleName = "CC-DRIVER"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
-                  timestampString = "569153944.1942101"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1727"
-                  endingLineNumber = "1727"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -9533,11 +9501,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.689005"
+            timestampString = "578380730.6761841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1721"
-            endingLineNumber = "1721"
+            startingLineNumber = "1827"
+            endingLineNumber = "1827"
             landmarkName = "single_ObserveTrip()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9549,11 +9517,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.689047"
+            timestampString = "578380730.6762379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1729"
-            endingLineNumber = "1729"
+            startingLineNumber = "1835"
+            endingLineNumber = "1835"
             landmarkName = "single_ObserveTrip()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9561,63 +9529,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.68909"
+            timestampString = "578380730.67629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1774"
-            endingLineNumber = "1774"
+            startingLineNumber = "1880"
+            endingLineNumber = "1880"
             landmarkName = "Driver_observeTrip()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CC_DRIVER.MapView.get_trip(rider_uid: Swift.String, trip_key: Swift.String) -&gt; ()"
-                  moduleName = "CC-DRIVER"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
-                  timestampString = "569153944.203106"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1774"
-                  endingLineNumber = "1774"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in CC_DRIVER.MapView.get_trip(rider_uid: Swift.String, trip_key: Swift.String) -&gt; ()"
-                  moduleName = "CC-DRIVER"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
-                  timestampString = "569153944.2053061"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1777"
-                  endingLineNumber = "1777"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.689132"
+            timestampString = "578380730.676357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1806"
-            endingLineNumber = "1806"
+            startingLineNumber = "1912"
+            endingLineNumber = "1912"
             landmarkName = "get_trip(rider_uid:trip_key:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -9629,11 +9565,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
-            timestampString = "577326199.689175"
+            timestampString = "578380730.676411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1732"
-            endingLineNumber = "1732"
+            startingLineNumber = "1838"
+            endingLineNumber = "1838"
             landmarkName = "single_ObserveTrip()"
             landmarkType = "7">
          </BreakpointContent>
@@ -9645,13 +9581,205 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CC-DRIVER/View Controller/TripDetail/driverTripDetailVC.swift"
-            timestampString = "575932305.5856169"
+            timestampString = "578381410.583618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
             landmarkName = "driverTripDetailVC"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/TripDetail/driverTripDetailVC.swift"
+            timestampString = "578381410.583837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "drawDirection(pickup:destination:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CC_DRIVER.MapView.viewDidLoad() -&gt; ()"
+                  moduleName = "CC-DRIVER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
+                  timestampString = "578367514.948133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "343"
+                  endingLineNumber = "343"
+                  offsetFromSymbolStart = "6796">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CC_DRIVER.MapView.viewDidLoad() -&gt; ()"
+                  moduleName = "CC-DRIVER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
+                  timestampString = "578367514.950408"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "345"
+                  endingLineNumber = "345"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676708"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2471"
+            endingLineNumber = "2471"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.67676"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2473"
+            endingLineNumber = "2473"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.67681"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2475"
+            endingLineNumber = "2475"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2477"
+            endingLineNumber = "2477"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2479"
+            endingLineNumber = "2479"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.676964"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2286"
+            endingLineNumber = "2286"
+            landmarkName = "get_rider_avatar(uid:completed:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -9660,13 +9788,317 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CC-DRIVER/View Controller/TripDetail/driverTripDetailVC.swift"
-            timestampString = "575932305.586328"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
-            landmarkName = "drawDirection(pickup:destination:completed:)"
+            startingLineNumber = "2332"
+            endingLineNumber = "2332"
+            landmarkName = "get_rider_avatar(uid:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677065"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2309"
+            endingLineNumber = "2309"
+            landmarkName = "get_rider_avatar(uid:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.6771179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2296"
+            endingLineNumber = "2296"
+            landmarkName = "get_rider_avatar(uid:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677169"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2478"
+            endingLineNumber = "2478"
+            landmarkName = "drawRouteForDriver(myLocation:destinationed:imageName:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677217"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3005"
+            endingLineNumber = "3005"
+            landmarkName = "SubmitRatingBtnPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677268"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1942"
+            endingLineNumber = "1942"
+            landmarkName = "get_trip(rider_uid:trip_key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677316"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1947"
+            endingLineNumber = "1947"
+            landmarkName = "get_trip(rider_uid:trip_key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1937"
+            endingLineNumber = "1937"
+            landmarkName = "get_trip(rider_uid:trip_key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677415"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2046"
+            endingLineNumber = "2046"
+            landmarkName = "assignTrip(TripDataResult:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677465"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2107"
+            endingLineNumber = "2107"
+            landmarkName = "assignTrip(TripDataResult:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677514"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2108"
+            endingLineNumber = "2108"
+            landmarkName = "assignTrip(TripDataResult:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in CC_DRIVER.MapView.assignTrip(TripDataResult: CC_DRIVER.Rider_trip_model) -&gt; ()"
+                  moduleName = "CC-DRIVER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
+                  timestampString = "578378938.764982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2063"
+                  endingLineNumber = "2063"
+                  offsetFromSymbolStart = "4576">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in closure #1 (__C.FIRDataSnapshot) -&gt; () in CC_DRIVER.MapView.assignTrip(TripDataResult: CC_DRIVER.Rider_trip_model) -&gt; ()"
+                  moduleName = "CC-DRIVER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khoinguyen/Desktop/CC-DRIVER/CC-DRIVER/View%20Controller/Map%20View/MapView.swift"
+                  timestampString = "578378938.766929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2067"
+                  endingLineNumber = "2067"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2072"
+            endingLineNumber = "2072"
+            landmarkName = "assignTrip(TripDataResult:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.6776119"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3455"
+            endingLineNumber = "3455"
+            landmarkName = "enableAcceptingRide()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.6776609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2169"
+            endingLineNumber = "2169"
+            landmarkName = "cancelTripRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.6777101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2190"
+            endingLineNumber = "2190"
+            landmarkName = "cancelTripRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.67776"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2525"
+            endingLineNumber = "2525"
+            landmarkName = "observeCancelFromRider(key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.677808"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2055"
+            endingLineNumber = "2055"
+            landmarkName = "assignTrip(TripDataResult:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CC-DRIVER/View Controller/Map View/MapView.swift"
+            timestampString = "578380730.6778589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2695"
+            endingLineNumber = "2695"
+            landmarkName = "switchDriverMode(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

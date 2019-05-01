@@ -66,6 +66,7 @@
 		6AAE2C35205F8015001DEF07 /* FirstLookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE2C34205F8015001DEF07 /* FirstLookVC.swift */; };
 		6AAE2C39205F81AA001DEF07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE2C38205F81AA001DEF07 /* Constant.swift */; };
 		6AAEF921207FEDA300DD5FFA /* cloudapi in Resources */ = {isa = PBXBuildFile; fileRef = 6AAEF920207FEDA300DD5FFA /* cloudapi */; };
+		6ABD221C2278218800AEC8E6 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABD221B2278218800AEC8E6 /* IntroVC.swift */; };
 		6ACFA2CA213C6B610084D592 /* codeIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFA2C9213C6B610084D592 /* codeIDVC.swift */; };
 		6AE7E893206DD50500F5AB38 /* windowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7E892206DD50500F5AB38 /* windowInfo.swift */; };
 		6AEBDC87206556DD008937E5 /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEBDC86206556DD008937E5 /* searchController.swift */; };
@@ -162,6 +163,7 @@
 		6AAE2C34205F8015001DEF07 /* FirstLookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLookVC.swift; sourceTree = "<group>"; };
 		6AAE2C38205F81AA001DEF07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		6AAEF920207FEDA300DD5FFA /* cloudapi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cloudapi; sourceTree = "<group>"; };
+		6ABD221B2278218800AEC8E6 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		6ACFA2C9213C6B610084D592 /* codeIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeIDVC.swift; sourceTree = "<group>"; };
 		6AE7E892206DD50500F5AB38 /* windowInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windowInfo.swift; sourceTree = "<group>"; };
 		6AEBDC86206556DD008937E5 /* searchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
@@ -577,6 +579,7 @@
 		6AAE2C30205F7527001DEF07 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6ABD221A2278217400AEC8E6 /* IntroVC */,
 				6AFFF8BC20849FFA004B2B9B /* ReportVC */,
 				6A246497207B1D84004F914E /* LocalNotif */,
 				6A246492207B13CE004F914E /* reportAnotherIssue */,
@@ -620,6 +623,14 @@
 				6AAE2C32205F7FEC001DEF07 /* SignUpVC */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		6ABD221A2278217400AEC8E6 /* IntroVC */ = {
+			isa = PBXGroup;
+			children = (
+				6ABD221B2278218800AEC8E6 /* IntroVC.swift */,
+			);
+			path = IntroVC;
 			sourceTree = "<group>";
 		};
 		6AE7E891206DD4A000F5AB38 /* xib */ = {
@@ -956,6 +967,7 @@
 				6A5EB695206A17F00060CD29 /* borderAvatarView.swift in Sources */,
 				6A6B50B52060155B004494F9 /* phoneVC.swift in Sources */,
 				6AE7E893206DD50500F5AB38 /* windowInfo.swift in Sources */,
+				6ABD221C2278218800AEC8E6 /* IntroVC.swift in Sources */,
 				6A246499207B1D98004F914E /* LocalNotification.swift in Sources */,
 				6A181D7820721E76005DCAC7 /* modTxtField.swift in Sources */,
 				6A37A77520752D6800888152 /* carRegistrationVC.swift in Sources */,

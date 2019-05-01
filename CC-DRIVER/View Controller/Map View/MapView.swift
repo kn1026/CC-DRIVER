@@ -86,7 +86,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
     @IBOutlet weak var bottomDirectionView: UIView!
     
     
-    
+    var avatarIcon: UIImage!
     
     
     
@@ -327,9 +327,67 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         
         Messaging.messaging().subscribe(toTopic: "CC-Driver") { error in
-            print("Subscribed to CC-Drvier topic")
+            if error == nil {
+                
+                print("Subscribed to CC-Drvier topic")
+                
+            }
+            
         }
+        
+        
+
+        
+        if let campus = try? InformationStorage?.object(ofType: String.self, forKey: "campus") {
+            
+            if let cc = campus {
+                
+                DataService.instance.mainDataBaseRef.child("Available_Campus").child(cc).observeSingleEvent(of: .value, with: { (schoolData) in
+                    
+                    
+                    if schoolData.exists() {
+                        
+                        if let dict = schoolData.value as? Dictionary<String, Any> {
+                            
+                            
+                            if let subKey = dict["Key"] as? String {
+                                
+                                Messaging.messaging().subscribe(toTopic: "\(subKey)") { error in
+                                    
+                                    if let err = error {
+                                        print("Error subscribe: \(err.localizedDescription)")
+                                        return
+                                    }
+                                    
+                                    print("Subscribed to \(subKey) topic")
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    
+                    
+                })
+                
+
+                
+            }
+            
+        } else {
+            
+            print("Can't load campus")
+            
+        }
+        
+        
     }
+    
+    
+    
     
     @objc func closeKeyboard() {
         
@@ -457,13 +515,19 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                                                 
                                                 
                                                 self.pulsator.stop()
-                                                self.drawRouteForDriver(myLocation: Mylocation, destinationed: destination, imageName: "user"){
+                                                
+                                                self.get_rider_avatar(uid: self.TripRiderResult.rider_UID) {
                                                     
-                                                    
-                                                    self.pulsator.start()
-                                                    self.fitAllMarkers(_path: self.path)
+                                                    self.drawRouteForDriver(myLocation: Mylocation, destinationed: destination, imageName: "user"){
+                                                        
+                                                        
+                                                        self.pulsator.start()
+                                                        self.fitAllMarkers(_path: self.path)
+                                                        
+                                                    }
                                                     
                                                 }
+                                                
                                                 
                                                 
                                                 
@@ -763,6 +827,9 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         }
         
         
+        check_if_driver_on_pending()
+        
+        
     }
     
     
@@ -1029,6 +1096,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 
                 if isAccepted != false {
                     
+                    
                     UpdateService.instance.updateOnTripDriverLocation(withCoordinate: coor, key: self.TripRiderResult.Trip_key)
                     
                     let des = CLLocation(latitude: TripRiderResult.PickUp_Lat, longitude: TripRiderResult.PickUp_Lon)
@@ -1132,10 +1200,6 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 }
             } else {
                 
-                let des = CLLocation(latitude: TripRiderResult.Destination_Lat, longitude: TripRiderResult.Destination_Lon)
-                let coors = locations.last
-                
-                let distance = calculateDistanceBetweenTwoCoordinator(baseLocation: coors!, destinationLocation: des)
                 
                 self.marker.position = coor
                 self.marker.tracksViewChanges = true
@@ -1648,7 +1712,49 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
    
     
     
-   
+    func check_if_driver_on_pending() {
+        
+        
+        DataService.instance.mainDataBaseRef.child("Driver_coordinator").child(userUID).observeSingleEvent(of: .value, with: { (DriverCoor ) in
+            
+            if DriverCoor.exists() {
+                
+                self.alertView.isHidden = false
+                self.switchBtn.isOn = true
+                self.alertView.backgroundColor = UIColor.yellow
+                self.alertLbl.text = "Finding Rides…"
+                self.alertLbl.textColor = UIColor.darkGray
+                
+                DataService.instance.mainDataBaseRef.child("Pending_driver").child(userUID).removeValue()
+                
+                self.locationManager.startUpdatingLocation()
+                
+                
+                DispatchQueue.global(qos: .background).async {
+                    print("Run on background thread")
+                    self.Driver_observeTrip()
+                }
+                
+                
+            } else {
+                
+                self.alertView.isHidden = true
+                self.switchBtn.isOn = false
+                
+                self.locationManager.stopUpdatingLocation()
+                
+                DataService.instance.mainDataBaseRef.child("Driver_coordinator").child(userUID).removeValue()
+                
+                
+                
+            }
+            
+            
+        })
+        
+        
+        
+    }
     
    
     
@@ -1902,6 +2008,40 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
     }
     
+    func loadRate(uid: String) {
+        
+        DataService.instance.mainDataBaseRef.child("Average_Rate").child("Rider").child(uid).observeSingleEvent(of: .value, with: { (RateData) in
+            
+            if RateData.exists() {
+                
+                
+                if let dict = RateData.value as? Dictionary<String, Any> {
+                    
+                    
+                    if let RateGet = dict["Rate"] as? Float {
+                        
+                        
+                        self.riderRequestStarLbl.text = String(format:"%.1f", RateGet)
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            } else {
+                
+                self.riderRequestStarLbl.text = ""
+                
+                
+            }
+            
+            
+        })
+        
+    }
+    
     
     func assignTrip(TripDataResult: Rider_trip_model) {
         
@@ -1920,7 +2060,9 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 self.isAccepted = false
                 
                 self.riderRequestName.text = TripDataResult.pickUp_name
-                self.riderRequestStarLbl.text = "5.0"
+                
+                
+                self.loadRate(uid: TripDataResult.rider_UID)
                 self.riderPriceRequestLbl.text = "$\(String(TripDataResult.price))"
                 self.riderRequestDistanceLbl.text = "\(TripDataResult.distance!)mi"
                 self.riderRequestDestinationLbl.text = TripDataResult.destinationAddress
@@ -2092,13 +2234,20 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 
                 
                 self.pulsator.stop()
-                self.drawRouteForDriver(myLocation: Mylocation, destinationed: destination, imageName: "user"){
+                
+                
+                self.get_rider_avatar(uid: self.TripRiderResult.rider_UID) {
                     
-                    
-                    self.pulsator.start()
-                    self.fitAllMarkers(_path: self.path)
+                    self.drawRouteForDriver(myLocation: Mylocation, destinationed: destination, imageName: "user"){
+                        
+                        
+                        self.pulsator.start()
+                        self.fitAllMarkers(_path: self.path)
+                        
+                    }
                     
                 }
+
                 
                 
                 
@@ -2112,6 +2261,83 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         
         
+        
+        
+        
+    }
+    
+    func get_rider_avatar(uid: String, completed: @escaping DownloadComplete) {
+        
+        avatarIcon = nil
+        
+        DataService.instance.mainDataBaseRef.child("User").child(uid).observeSingleEvent(of: .value, with: { (data) in
+            
+            if data.exists() {
+                
+                if let dict = data.value as? Dictionary<String, Any> {
+                    
+                    
+                    if let avatar = dict["avatarUrl"] as? String {
+                        
+                        
+                        if avatar == "nil" {
+                            
+                            
+                            completed()
+                            
+                        } else {
+                            
+                            
+                            if let CachedriderImg = try? InformationStorage?.object(ofType: ImageWrapper.self, forKey: avatar).image {
+                                
+                                
+                                self.avatarIcon = CachedriderImg
+                                
+                                completed()
+                                
+                                
+                            } else {
+                                
+                                Alamofire.request(avatar).responseImage { response in
+                                    
+                                    if let image = response.result.value {
+                                        
+                                        let wrapper = ImageWrapper(image: image)
+                                        self.avatarIcon = image
+                                        try? InformationStorage?.setObject(wrapper, forKey: avatar)
+                                        
+                                        completed()
+                                        
+                                    }
+                                    
+                                    
+                                }
+                                
+                                
+                                
+                            }
+                            
+                            
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+            } else {
+                
+                completed()
+                
+            }
+            
+            
+            
+            
+            
+        })
         
         
         
@@ -2238,12 +2464,26 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             self.marker.appearAnimation = .pop
             myView.addSubview(markerView)
             
+            var iconImages: UIImage!
             
             let desMarker = GMSMarker()
             
-            let IconImages = resizeImage(image: UIImage(named: imageName)!, targetSize: CGSize(width: 40.0, height: 40.0))
+            if imageName == "user" {
+                
+                if self.avatarIcon != nil {
+                    
+                    iconImages = resizeImage(image: self.avatarIcon, targetSize: CGSize(width: 40.0, height: 40.0))
+                    
+                } else {
+                    
+                    iconImages = resizeImage(image: UIImage(named: imageName)!, targetSize: CGSize(width: 40.0, height: 40.0))
+                    
+                }
+            }
+            
+            
             desMarker.position = destinationed
-            desMarker.icon = IconImages
+            desMarker.icon = iconImages
             desMarker.snippet = self.DriverEta
             desMarker.tracksViewChanges = true
             
@@ -2754,8 +2994,15 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                 DataService.instance.mainDataBaseRef.child("Missing_Rate").child("Driver").child(userUID).removeValue()
                 
                 
-                self.enableAcceptingRide()
+                
+                self.isAccepted = false
+                self.IsSendMess = false
+                self.IsDeliverMess = false
+                self.toDestination = false
                 self.ratingText.text = "Comment"
+                
+                
+                self.enableAcceptingRide()
                 
             })
             
@@ -2920,7 +3167,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
                     timeFormatter.timeStyle = DateFormatter.Style.short
                     let times = timeFormatter.string(from: date)
                     
-                    let sms = "You have recieved $\(Price/100).00 from \(RiderName) at \(times). You can check it out in the payment setting and you will receive your money on the next business day"
+                    let sms = "You have recieved $\(Price/100)0 from \(RiderName) at \(times). You can check it out in the payment setting and you will receive your money on the next business day"
                     
                     LocalNotification.dispatchlocalNotification(with: "Congratulations", body: sms)
                     
@@ -3198,7 +3445,7 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
         
         locationManager.stopUpdatingLocation()
         
-        DataService.instance.mainDataBaseRef.child("Driver_coordinator").removeValue()
+        DataService.instance.mainDataBaseRef.child("Driver_coordinator").child(userUID).removeValue()
         
         
         
@@ -3218,12 +3465,18 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             
             DataService.instance.mainDataBaseRef.child("Pending_driver").child(userUID).removeValue()
             
+            locationManager.startUpdatingLocation()
+            
+            
             DispatchQueue.global(qos: .background).async {
                 print("Run on background thread")
                 self.Driver_observeTrip()
             }
+ 
             
-            locationManager.startUpdatingLocation()
+            
+            
+            
             
             
         }

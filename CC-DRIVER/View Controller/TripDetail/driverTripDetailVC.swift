@@ -66,7 +66,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         timeFormatter.timeStyle = DateFormatter.Style.short
         let timess = timeFormatter.string(from: date)
         
-        mapView2.isUserInteractionEnabled = true
+        mapView2.isUserInteractionEnabled = false
         
         if dayDifference(from: date) == "Today" {
             
@@ -99,12 +99,12 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         
         loadRiderImg()
         
-        totalPriceLbL.text = "$\(self.price!)"
+        totalPriceLbL.text = "$\(String(format:"%.2f", self.price!))"
         startLocationLbl.text = self.pickUpName
         destinationLbl.text  = self.destinationName!
        
         
-        let money_receive = self.price! * 60 / 100
+        let money_receive = String(format:"%.2f", self.price! * 60 / 100)
         moneyRecievedLbl.text = "$\(money_receive)"
     
         let fullNameArr = self.pickUp_name?.components(separatedBy: " ")
@@ -216,6 +216,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
     @IBAction func reportIssueBtnPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "moveToReportTripVC", sender: nil)
+        
     }
     
     func styleMap() {
@@ -228,7 +229,9 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
                 NSLog("Unable to find style.json")
             }
         } catch {
+            
             NSLog("One or more of the map styles failed to load. \(error)")
+            
         }
         
         
@@ -300,7 +303,7 @@ class driverTripDetailVC: UIViewController, GMSMapViewDelegate {
         for index in 1..._path.count() {
             bounds = bounds.includingCoordinate(_path.coordinate(at: index))
         }
-        mapView2.moveCamera(GMSCameraUpdate.fit(bounds, withPadding: 60))
+        mapView2.moveCamera(GMSCameraUpdate.fit(bounds, withPadding: 80))
         
     }
     

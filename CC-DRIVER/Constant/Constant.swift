@@ -226,3 +226,14 @@ func delay(_ seconds: Double, completion:@escaping ()->()) {
 func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
     return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
 }
+
+
+func convertDouble(num: Double) {
+    
+    let nums = num.description
+    
+    print(nums)
+    
+    
+    
+}

@@ -37,8 +37,10 @@ class HistoryCell: UITableViewCell {
             
         }
         
-        
-        moneyLbl.text = "$\(info.price!)"
+        let money = String(format:"%.2f", info.price!)
+        moneyLbl.text = "$\(money)"
+
+
         
         let time = info.Timestamp as? TimeInterval
         let date = Date(timeIntervalSince1970: time!/1000)

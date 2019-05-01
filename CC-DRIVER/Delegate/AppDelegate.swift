@@ -263,6 +263,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         
         DataService.instance.mainDataBaseRef.child("Status").child((Auth.auth().currentUser?.uid)!).setValue(["Online": 1])
         
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
         backgroundMode = false
         
     }
@@ -271,6 +273,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        
+        DataService.instance.mainDataBaseRef.child("Driver_coordinator").child(userUID).removeValue()
+        
     }
     
    

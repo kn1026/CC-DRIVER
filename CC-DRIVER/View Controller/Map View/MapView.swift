@@ -786,8 +786,40 @@ class MapView: UIViewController, GMSMapViewDelegate, UITextViewDelegate, UNUserN
             self.performSegue(withIdentifier: "GoBackToSignIn", sender: nil)
             return
             
+            
         }
         
+        
+        
+        let userDefaults = UserDefaults.standard
+        
+        
+        if userDefaults.bool(forKey: "hasRunIntro") == false {
+            
+            userDefaults.set(true, forKey: "hasRunIntro")
+            userDefaults.synchronize() // This forces the app to update userDefaults
+            
+            // Run code here for the first launch
+            
+            
+            self.performSegue(withIdentifier:
+                "moveToIntroVC2", sender: nil)
+            
+            return
+            
+        } else {
+            print("The Intro has been launched before. Loading UserDefaults...")
+            // Run code here for every other launch but the first
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+//        moveToIntroVC2
         
         if marker.iconView != nil  {
             
